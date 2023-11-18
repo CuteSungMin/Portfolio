@@ -1,15 +1,15 @@
 import './App.css';
-import Section1 from './component/section1.js'
-import Logo from './component/logo.js'
-import Bg from './component/bg.js'
+import {Routes, Route} from "react-router-dom"
+import Main from './component/main.js'
+
 
 
 function App() {
   return (
     <div className="App">
-      <Logo/>
-      <Bg/>
-      <Section1/>
+      <Routes>
+        <Route path='/Portfolio' element={<Main/>} />
+      </Routes>
     </div>
   );
 }
