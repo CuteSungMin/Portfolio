@@ -1,0 +1,10 @@
+#bgSection{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
