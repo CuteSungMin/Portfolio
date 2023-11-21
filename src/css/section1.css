@@ -1,5 +1,160 @@
 .section1{
     width: 100%;
     height: 100vh;
+}
+.section1Article{
+    display: flex;
+}
+.section1Article>div{
+    width: calc(100% / 2);
+}
+.section1Logo{
+    width: 200px;
+    margin-bottom: 50px;
+}
+.section1Title{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.section1Table>tr:last-child>td:first-child{
+    vertical-align: top;
+}
+.tableCol{
+    border-collapse: separate;
+    border-spacing: 10px 0;
+}
+.tableTitle{
+    font-size: 16px;
+    font-weight: bold;
+    width: 12%;
+    color: #F21137;
+    padding-bottom: 20px;
+}
+.tableText{
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    height: auto;
+}
+.section1Right{
+    display: flex;
+}
+.section1Right>div{
+    width: calc(100% / 2);
+}
+.sectionLeftBorder{
+    text-align: end;
+    border-right: 2px solid #fff;
+}
+.sectionLeftBorder>p{
+    margin: 0 20px 90px 0;
+    color: #F21137;
+    font-weight: bold;
+}
+.sectionRightBorder>p{
+    margin: 0 0 90px 20px;
+    font-weight: bold;
+    color: #fff;
+}
+@media (max-width : 1238px){
+    .sectionRightBorder>p:nth-child(6){
+        margin-bottom: 70px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+}
+@media (max-width : 1123px){
+    .tableTitle{
+        width: 14%;
+    }
+    .sectionRightBorder>p:nth-child(2){
+        margin-bottom: 70px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+}
 
+/* 태블릿*/
+@media (max-width : 1024px){
+    .section1Article{
+        display: block;
+    }
+    .section1Article>div{
+        width: 100%;
+    }
+    .section1Left{
+        width: 100%;
+    }
+    .section1Table{
+        width: 100%;
+    }
+    .section1Right{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .sectionRightBorder>p:nth-child(2){
+        margin-bottom: 90px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .sectionRightBorder>p:nth-child(6){
+        margin-bottom: 90px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+}
+
+/* 모바일*/
+@media (max-width : 768px){
+    .sectionRightBorder>p:nth-child(6){
+        margin-bottom: 70px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .section1Left{
+        text-align: center;
+    }
+}
+
+
+@media (max-width : 584px){
+    .sectionRightBorder>p:nth-child(2){
+        margin-bottom: 70px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .tableTitle{
+        width: 15%;
+    }
+}
+@media (max-width : 499px){
+    .sectionRightBorder>p:nth-child(1){
+        margin-bottom: 70px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+}
+@media (max-width : 486px){
+    .sectionRightBorder>p:nth-child(7){
+        margin-bottom: 70px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .tableTitle{
+        width: 16%;
+    }
+}
+
+/*더 작은 모바일*/
+@media (max-width : 460px){
+    .section1Right>div:first-child{
+    width: 40%;
+    }
+    .section1Right>div:last-child{
+    width: 60%;
+    }
+    .sectionRightBorder>p:nth-child(2){
+        margin-bottom: 90px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .sectionRightBorder>p:nth-child(3){
+        margin-bottom: 110px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .sectionRightBorder>p:nth-child(4){
+        margin-bottom: 120px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .sectionRightBorder>p:nth-child(5){
+        margin-bottom: 100px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .sectionRightBorder>p:nth-child(6){
+        margin-bottom: 90px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+    .sectionRightBorder>p:nth-child(7){
+        margin-bottom: 90px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
 }

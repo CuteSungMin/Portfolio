@@ -88,9 +88,13 @@ const Palace = () => {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
     return ( 
-        <div className='introLogo' ref={intro}>
-            <p>Brand</p>
-        </div>
+        <section className='introLogo' ref={intro}>
+            <div className='introNav'>
+                <p>History</p>
+                <p>Support</p>
+                <p>Project</p>
+            </div>
+        </section>
      );
 }
 export default Palace;
