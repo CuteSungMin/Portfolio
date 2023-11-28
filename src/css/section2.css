@@ -1,0 +1,28 @@
+.section2{
+    margin-bottom: 90px;
+}
+.section2Title{
+    text-align: center;
+}
+.section2Title>h1{
+    color: #fff;
+    font-size: 40px;
+    margin: 60px 0 30px;
+}
+.section2Article>div:first-child{
+    margin-bottom: 60px;
+}
+.section2Content{
+    display: flex;
+    justify-content: space-between;
+}
+.section2Content>div{
+    width: 250px; height: 300px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.Sec2Img{
+    width: 100px; height: 100px;
+}

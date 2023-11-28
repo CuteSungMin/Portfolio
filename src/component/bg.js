@@ -78,9 +78,15 @@ function Bg(){
         const animate = () => {
             window.requestAnimationFrame(animate);
             const delta = clock.getDelta();
-            // particlesMesh.rotation.x += delta/15;
             particlesMesh.rotation.y -= delta/30;
-            // particlesMesh.rotation.z -= delta/33;
+
+            if(window.scrollY >= 1000){
+            particlesMesh.rotation.x += delta/15;
+
+            }
+            if(window.scrollY >= 2000){
+            particlesMesh.rotation.z += delta/15;
+            }
             renderer.render(scene, camera);
         };
     animate();

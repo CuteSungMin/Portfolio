@@ -6,7 +6,7 @@ function Section1() {
     <section className="section1">
       <article className="w1500 section1Article">
         <div className="section1Left">
-          <img src={Logo} className="section1Logo"></img>
+          <img src={Logo} alt='logo' className="section1Logo"></img>
           <h1 className="section1Title">Brand History</h1>
           <table className="section1Table">
             <tr className="tableCol">
