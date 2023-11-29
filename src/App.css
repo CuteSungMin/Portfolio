@@ -20,7 +20,7 @@
   stroke-width: 0.5px;
   stroke-dashoffset: 100px;
   stroke-dasharray: 360px;
-  animation: strokeMove 10s infinite;
+  animation: strokeMove 8s infinite;
 }
 @keyframes strokeMove{
   0%{stroke: #000;}

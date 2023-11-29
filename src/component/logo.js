@@ -15,7 +15,7 @@ const Palace = () => {
     }
     const topSec2 = ()=>{
         window.scrollTo({
-            top: `1900`,
+            top: `1850`,
             behavior: `smooth`
         })
     }

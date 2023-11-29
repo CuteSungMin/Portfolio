@@ -80,12 +80,19 @@ function Bg(){
             const delta = clock.getDelta();
             particlesMesh.rotation.y -= delta/30;
 
-            if(window.scrollY >= 900){
+            if(window.scrollY >= 970){
             particlesMesh.rotation.x += delta/30;
 
             }
-            if(window.scrollY >= 1900){
+            if(window.scrollY >= 1850){
+            particlesMesh.position.y -= delta / 3;
+                if (particlesMesh.position.y < -10) {
+                    particlesMesh.position.y = 10;
+                } // 무한으로 떨어지는 거 구현
+                }
+            if(window.scrollY >= 6000){// 떨어지는거임
             particlesMesh.rotation.z += delta/30;
+            particlesMesh.position.y -= delta / 1;
             }
             renderer.render(scene, camera);
         };
