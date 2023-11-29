@@ -80,12 +80,12 @@ function Bg(){
             const delta = clock.getDelta();
             particlesMesh.rotation.y -= delta/30;
 
-            if(window.scrollY >= 1000){
-            particlesMesh.rotation.x += delta/15;
+            if(window.scrollY >= 900){
+            particlesMesh.rotation.x += delta/30;
 
             }
-            if(window.scrollY >= 2000){
-            particlesMesh.rotation.z += delta/15;
+            if(window.scrollY >= 1900){
+            particlesMesh.rotation.z += delta/30;
             }
             renderer.render(scene, camera);
         };

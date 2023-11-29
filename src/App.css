@@ -15,6 +15,21 @@
   height: 100vh;
   overflow: hidden;
 }
+.svgImg{
+  stroke: #000;
+  stroke-width: 0.5px;
+  stroke-dashoffset: 100px;
+  stroke-dasharray: 360px;
+  animation: strokeMove 10s infinite;
+}
+@keyframes strokeMove{
+  0%{stroke: #000;}
+  49%{stroke: #000;}
+  50%{fill: #fff; stroke-dashoffset: 360px;}
+  100%{fill: #fff; stroke-dashoffset: 360px;}
+
+}
+
 @media (max-width : 1500px){
     .w1500{
       width: 100%;

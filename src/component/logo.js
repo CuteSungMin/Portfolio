@@ -6,6 +6,27 @@ import model from '../img/ProjectLogo.glb'
 import "../css/logo.css"
 
 const Palace = () => {
+
+    const topSec1 = ()=>{
+        window.scrollTo({
+            top: `970`,
+            behavior: `smooth`
+        })
+    }
+    const topSec2 = ()=>{
+        window.scrollTo({
+            top: `1900`,
+            behavior: `smooth`
+        })
+    }
+    const topSec3 = ()=>{
+        window.scrollTo({
+            top: `1000`,
+            behavior: `smooth`
+        })
+    }
+
+
     const intro = useRef()
     useEffect(() => {  
         const introCurrnet = intro.current
@@ -90,9 +111,9 @@ const Palace = () => {
     return ( 
         <section className='introLogo' ref={intro}>
             <div className='introNav'>
-                <p>History</p>
-                <p>Support</p>
-                <p>Project</p>
+                <p onClick={topSec1}>History</p>
+                <p onClick={topSec2}>Support</p>
+                <p onClick={topSec3}>Project</p>
             </div>
         </section>
      );

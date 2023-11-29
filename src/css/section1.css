@@ -27,7 +27,7 @@
 .tableTitle{
     font-size: 16px;
     font-weight: bold;
-    width: 12%;
+    width: 13%;
     color: #F21137;
     padding-bottom: 20px;
 }
@@ -36,7 +36,6 @@
     font-size: 16px;
     padding-bottom: 20px;
     padding-left: 20px;
-    height: auto;
 }
 .section1Right{
     display: flex;
@@ -74,6 +73,8 @@
     font-weight: bold;
     color: #fff;
 }
+
+
 @media (max-width : 1238px){
     .sectionRightBorder>p:nth-child(6){
         margin-bottom: 70px;
@@ -157,6 +158,12 @@
     }
     .section1Right>div:last-child{
     width: 60%;
+    }
+    .tableTitle{
+        width: 20%;
+    }
+    .tableText{
+        padding-left: 10px;
     }
     .sectionRightBorder>p:nth-child(1){
         margin-bottom: 95px;
