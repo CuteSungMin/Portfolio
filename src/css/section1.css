@@ -197,10 +197,20 @@
 }
 @media (max-width : 413px){
     .sectionRightBorder>p:nth-child(1){
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }/* 글씨 깨지는거 반응형 으로 잡음*/
     .sectionRightBorder>p:nth-child(7){
+        margin-bottom: 100px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+}
+@media (max-width : 409px){
+    .sectionRightBorder>p:nth-child(7){
         margin-bottom: 80px;
+    }/* 글씨 깨지는거 반응형 으로 잡음*/
+}
+@media (max-width : 403px){
+    .sectionRightBorder>p:nth-child(1){
+        margin-bottom: 70px;
     }/* 글씨 깨지는거 반응형 으로 잡음*/
 }
 @media (max-width : 374px){
