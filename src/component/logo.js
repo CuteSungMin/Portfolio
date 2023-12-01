@@ -1,11 +1,17 @@
 import * as THREE from 'three';
-import { useRef,useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
 import model from '../img/ProjectLogo.glb'
 import "../css/logo.css"
 
-const Logo = () => {
+const Logo = ({onInputChange}) => {
+    const inputChange = (e)=>{
+        const {name, value} = e.target;
+        onInputChange(name,value)
+    }
+
+
 
     const topSec1 = ()=>{
         window.scrollTo({
@@ -72,7 +78,7 @@ const Logo = () => {
         const imgs = gltf.scene.children[0];
         scene.add(imgs)
         imgs.position.z = -10;
-        imgs.position.y = -2;
+        imgs.position.y = 1;
         animateModel(imgs)
 
     })
@@ -114,6 +120,11 @@ const Logo = () => {
                 <p onClick={topSec1}>History</p>
                 <p onClick={topSec2}>Support</p>
                 <p onClick={topSec3}>Project</p>
+            </div>
+            <div className='logoInputWrap'>
+                <input type='text' placeholder='배경색을 바꿔보세요!' name="bgColor" onChange={inputChange}></input>
+                <input type='text' placeholder='입자색을 입력해보세요!' name="cubeColor" onChange={inputChange}></input>
+                <input type='text' placeholder='속도 조절해보세요!' name="cubeSpeed" onChange={inputChange}></input>
             </div>
         </section>
      );

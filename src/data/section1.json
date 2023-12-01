@@ -1,0 +1,41 @@
+{
+    "Title" : {
+        "name" : "이름",
+        "year" : "설립연도",
+        "location" : "본사위치",
+        "certificate" : "자격증",
+        "work" : "주요사업",
+        "number" : "대표번호",
+        "price" : "매출액",
+        "greetings" : "인사말"
+    },
+    "Text" : {
+        "name" : "조성민",
+        "year" : "1997년 11월 6일",
+        "location" : "서울시 노원구 중계동",
+        "certificate" : "#웹디자인기능사 #신변보호사",
+        "work" : "Front-End Developer",
+        "number" : "010-2250-8162",
+        "price" : "500,000원"
+    },
+    "YearNum" : {
+        "name" : "1997.11.06",
+        "university" : "2016.02.23 ~ 2018.02.09",
+        "guard" : "2017.03.11 ~ 2018.01.20",
+        "soldier" : "2018.03.06 ~ 2019.11.04",
+        "caps" : "2020.01.28 ~ 2023.03.15",
+        "student" : "2023.05.31 ~ 2023.12.18",
+        "developer" : "2023.12.16 ~ 2060.12.31",
+        "dream" : "2071.01.01 ~"
+    },
+    "YearText" : {
+        "name" : "조성민",
+        "university" : "아세아 항공 전문학교 (경찰경호과)",
+        "guard" : "프리랜서 경호원",
+        "soldier" : "군인",
+        "caps" : "SK 쉴더스 (前 ADT 캡스)",
+        "student" : "그린 컴퓨터 아카데미 (프론트엔드 과정)",
+        "developer" : "Front-end developer 전문가",
+        "dream" : "서울 아파트 매매"
+    }
+}

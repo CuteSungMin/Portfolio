@@ -1,5 +1,7 @@
 import '../css/section2.css'
 
+// section2 데이터
+import Sec2Data from "../data/section2.json"
 
 
 //svg
@@ -17,6 +19,18 @@ import ThreeJsSvg from "../img/ThreeJsSvg.js"
 
 
 const Section2 = () => {
+    const contentData = [
+        { svgImg : <HtmlSvg/>, imgTitle : Sec2Data.imgTitle.html, imgText: Sec2Data.imgText.html},
+        { svgImg : <JsSvg/>, imgTitle : Sec2Data.imgTitle.js, imgText: Sec2Data.imgText.js},
+        { svgImg : <NodeJsSvg/>, imgTitle : Sec2Data.imgTitle.nodeJs, imgText: Sec2Data.imgText.nodeJs},
+        { svgImg : <ReactSvg/>, imgTitle : Sec2Data.imgTitle.react, imgText: Sec2Data.imgText.react},
+        { svgImg : <ThreeJsSvg/>, imgTitle : Sec2Data.imgTitle.ThreeJs, imgText: Sec2Data.imgText.ThreeJs},
+        { svgImg : <CssSvg/>, imgTitle : Sec2Data.imgTitle.css, imgText: Sec2Data.imgText.css},
+        { svgImg : <FigmaSvg/>, imgTitle : Sec2Data.imgTitle.figma, imgText: Sec2Data.imgText.figma},
+        { svgImg : <AiSvg/>, imgTitle : Sec2Data.imgTitle.ai, imgText: Sec2Data.imgText.ai},
+        { svgImg : <PhotoshopSvg/>, imgTitle : Sec2Data.imgTitle.photoshop, imgText: Sec2Data.imgText.photoshop},
+        { svgImg : <BlenderSvg/>, imgTitle : Sec2Data.imgTitle.blender, imgText: Sec2Data.imgText.blender},
+    ]
 
     // 콘텐츠들 컴포넌트
     const Sec2Content = ({imgTitle,imgText, svgImgBox})=>{
@@ -36,18 +50,14 @@ const Section2 = () => {
             <div className='section2Title'><h1>SUPPORT</h1></div>
             <article className='w1500 section2Article'>
                 <div className='section2Content'>
-                    <Sec2Content svgImgBox={<HtmlSvg/>} imgTitle={'HTML'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<JsSvg/>} imgTitle={'JAVA SCRIPT'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<NodeJsSvg/>} imgTitle={'NODEJS'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<ReactSvg/>} imgTitle={'REACT'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<ThreeJsSvg/>} imgTitle={'THREE JS'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                {/* </div>
-                <div className='section2Content'> */}
-                    <Sec2Content svgImgBox={<CssSvg/>} imgTitle={'CSS'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<FigmaSvg/>} imgTitle={'FIGMA'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<AiSvg/>} imgTitle={'ILLUSTRATOR'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<BlenderSvg/>} imgTitle={'BLENDER'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
-                    <Sec2Content svgImgBox={<PhotoshopSvg/>} imgTitle={'PHOTOSHOP'} imgText={'DATA의 Change를 원활하게 Help 해주셨으며COMPONENT Recycling에 업무 과다를 없애주셨습니다'}/>
+                    {contentData.map((data, index) => (
+                        <Sec2Content
+                            key={index}
+                            svgImgBox={data.svgImg}
+                            imgTitle={data.imgTitle}
+                            imgText={data.imgText}
+                        />
+                    ))}
                 </div>
             </article>
         </section>

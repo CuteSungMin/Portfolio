@@ -1,10 +1,13 @@
 import * as THREE from 'three';
-import { useRef,useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import "../css/bg.css"
 
-function Bg(){
+function Bg({inputValues}){
+    const {bgColor, cubeColor, cubeSpeed} = inputValues;
     const sky = useRef();
     useEffect(()=>{
+        
+    
         const skys = sky.current
         // Scene
         const scene = new THREE.Scene();
@@ -51,47 +54,45 @@ function Bg(){
         });
         // Objects
 
-        //particle
-        const particlesGeometry = new THREE.BufferGeometry();
-        const particlesmaterial = new THREE.PointsMaterial({
-            size: 0.02,
-            transparent: true,
-        });
-        //별 외형?
-        const particlesCnt = 300;
-        //별 갯수
-        const posArray = new Float32Array(particlesCnt * 3);
-        //별갯수x3
-        // xyz,xyz,xyz , xyz
-        for (let i = 0; i < particlesCnt * 3; i++) {
-            posArray[i] = (Math.random() - 0.5) * (Math.random() * 30);
+        // 입자
+        const particlesGeometry = new THREE.BoxGeometry(0.003,0.003,0.003);  // 입자의 크기임
+        const particlesMaterial = new THREE.MeshBasicMaterial({ color: cubeColor || 'white' }); //입자 색
+        const particlesMeshes = [];
+        console.log(cubeColor)
+        for (let i = 0; i < 1000; i++) {
+            const particlesMesh = new THREE.Mesh(particlesGeometry, particlesMaterial);
+            particlesMesh.position.x = (Math.random() - 0.5) * (Math.random() * 10);
+            particlesMesh.position.y = (Math.random() - 0.5) * (Math.random() * 10);
+            particlesMesh.position.z = (Math.random() - 0.5) * (Math.random() * 10);
+            scene.add(particlesMesh);
+            particlesMeshes.push(particlesMesh);
         }
 
-        particlesGeometry.setAttribute(
-            "position",
-            new THREE.BufferAttribute(posArray, 3)
-        );
-        const particlesMesh = new THREE.Points(particlesGeometry, particlesmaterial);
-        scene.add(particlesMesh);
-        const clock = new THREE.Clock();
 
+        const clock = new THREE.Clock();
         const animate = () => {
             window.requestAnimationFrame(animate);
             const delta = clock.getDelta();
-            particlesMesh.rotation.y -= delta/30;
+            particlesMeshes.forEach((particle) => {
+                particle.position.y -= delta / 20; // y축으로 떨어지기
+                if (particle.position.y < -3) {
+                    particle.position.y = 3;
+                } // 무한으로 떨어지는 거 구현
 
-            if(window.scrollY >= 970){
-            particlesMesh.rotation.x += delta/30;
-
-            }
-            if(window.scrollY >= 1890){
-            particlesMesh.rotation.z += delta/30;
+                if(window.scrollY >= 970){
+                    particle.rotation.x -= delta/30;
                 }
+                if(window.scrollY >= 1890){
+                    particle.rotation.z += delta/30;
+                    }
+            });
+
+
 
             renderer.render(scene, camera);
         };
     animate();
-  })
+  }, [bgColor, cubeColor, cubeSpeed])
   return(
     <section id="bgSection" ref={sky}>
     </section>

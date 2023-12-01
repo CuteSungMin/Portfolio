@@ -1,14 +1,8 @@
 import '../css/section3.css'
-import {useState} from 'react'
 
 
 const Section3 = () => {
 
-    const [unrolled, setUnrolled] = useState(false);
-
-    const handleUnrollToggle = () => {
-      setUnrolled(!unrolled);
-    };
 
     return ( 
         <section className='section3'>
