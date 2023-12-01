@@ -42,12 +42,14 @@ function Section1() {
           <img src={Logo} alt='logo' className="section1Logo"></img>
           <h1 className="section1Title">Brand History</h1>
           <table className="section1Table">
-            {tableData.map((data,index)=>(
-              <tr key={index} className="tableCol">
-                <td className="tableTitle">{data.tableTitle}</td>
-                <td className="tableText">{data.tableText}</td>
-            </tr>
-            ))}
+            <tbody>
+              {tableData.map((data,index)=>(
+                <tr key={index} className="tableCol">
+                  <td className="tableTitle">{data.tableTitle}</td>
+                  <td className="tableText">{data.tableText}</td>
+              </tr>
+              ))}
+            </tbody>
           </table>
         </div>
         <div className="section1Right">

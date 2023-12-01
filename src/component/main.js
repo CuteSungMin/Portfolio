@@ -10,7 +10,6 @@ function Main() {
   const [inputValues, setInputValues] = useState({
     bgColor : '',
     cubeColor : '',
-    cubeSpeed : '',
   })
   const inputChange = (name, value) => {
     setInputValues((prevValues)=>({
@@ -20,7 +19,7 @@ function Main() {
   }
   return (
     <div className="App">
-        <Logo onInputChange={inputChange}/>
+        <Logo inputValues={inputValues} onInputChange={inputChange}/>
         <Bg inputValues={inputValues}/>
         <Section1/>
         <Section2/>
