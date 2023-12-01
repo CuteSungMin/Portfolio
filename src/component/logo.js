@@ -5,7 +5,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
 import model from '../img/ProjectLogo.glb'
 import "../css/logo.css"
 
-const Palace = () => {
+const Logo = () => {
 
     const topSec1 = ()=>{
         window.scrollTo({
@@ -15,7 +15,7 @@ const Palace = () => {
     }
     const topSec2 = ()=>{
         window.scrollTo({
-            top: `1850`,
+            top: `1890`,
             behavior: `smooth`
         })
     }
@@ -118,4 +118,4 @@ const Palace = () => {
         </section>
      );
 }
-export default Palace;
+export default Logo;
