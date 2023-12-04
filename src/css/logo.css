@@ -1,9 +1,11 @@
 .introNav{
     width: 100%;
     display: flex;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgb(0,0,0);
+    border-bottom: 1px solid #fff;
     justify-content: flex-end;
     position: fixed;
+    z-index: 9999;
     padding: 0 50px;
 }
 .introNav>p{
@@ -21,11 +23,23 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.logoInputWrap>input{
-    outline: none;
-    display: block;
-    padding: 10px 20px;
-    margin-bottom: 5px;
+.logoInputBg{
+    display: flex;
+}
+.logoInputBg>h1{
+    color: #fff;
+}
+.inputBg{
+    border: none;
+}
+.logoInputMesh{
+    display: flex;
+}
+.logoInputMesh>h1{
+    color: #fff;
+}
+.inputMesh{
+    border: none;
 }
 @media (max-width:1024px){
     .introNav{

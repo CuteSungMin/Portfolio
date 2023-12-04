@@ -1,0 +1,32 @@
+{
+    "Title" : {
+        "div1Left" : "PROJECT",
+        "div1Right" : "eBook",
+        "div2Left" : "경복궁 별빛야행 리뉴얼",
+        "div2Right" : "프론트엔드 사전",
+        "div3Left" : "광주 컨트리 클럽 리뉴얼",
+        "div3Right" : "부릉부릉",
+        "div4Left" : "도미노 피자 리뉴얼",
+        "div4Right" : "독도 리뉴얼"
+    },
+    "botTitle" : {
+        "bot1Left" : "d",
+        "bot1Right" : "TEAM PROJECT",
+        "bot2Left" : "TEAM PROJECT - LEADER",
+        "bot2Right" : "PROJECT - ALONE",
+        "bot3Left" : "PROJECT - ALONE",
+        "bot3Right" : "TOY PROJECT - ALONE",
+        "bot4Left" : "PROJECT - ALONE",
+        "bot4Right" : "PROJECT - ALONE"
+    },
+    "content" : {
+        "react" : "# REACT",
+        "jsx" : "# JSX",
+        "threeJs" : "# THREE JS",
+        "css" : "# CSS",
+        "html" : "# HTML"
+    },
+    "images" : {
+        "page1" : "../img/page3.png"
+    }
+}

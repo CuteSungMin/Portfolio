@@ -49,8 +49,8 @@
     position: relative;
     z-index: -1;
 }
-.sectionLeftBorder::after{
-    content: "";
+.sectionLeftBorderMove{
+    position: absolute;
     display: block;
     width: 10px; height: 10px;
     background-color: #000;

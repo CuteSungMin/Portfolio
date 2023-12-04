@@ -2,7 +2,8 @@ import '../css/section1.css'
 import Logo from "../img/solid_white_logo.png"
 import Sec1Data from '../data/section1.json'
 
-function Section1() {
+function Section1({inputValues}) {
+  const {bgColor} = inputValues;
   const tableData = [
     {tableTitle : Sec1Data.Title.name, tableText : Sec1Data.Text.name},
     {tableTitle : Sec1Data.Title.year, tableText : Sec1Data.Text.year},
@@ -21,7 +22,6 @@ function Section1() {
     {yearNum : Sec1Data.YearNum.caps},
     {yearNum : Sec1Data.YearNum.student},
     {yearNum : Sec1Data.YearNum.developer},
-    {yearNum : Sec1Data.YearNum.dream},
   ]
   const yearTextData = [
     {yearText : Sec1Data.YearText.name},
@@ -31,7 +31,6 @@ function Section1() {
     {yearText : Sec1Data.YearText.caps},
     {yearText : Sec1Data.YearText.student},
     {yearText : Sec1Data.YearText.developer},
-    {yearText : Sec1Data.YearText.dream},
   ]
 
 
@@ -42,12 +41,14 @@ function Section1() {
           <img src={Logo} alt='logo' className="section1Logo"></img>
           <h1 className="section1Title">Brand History</h1>
           <table className="section1Table">
-            {tableData.map((data,index)=>(
-              <tr key={index} className="tableCol">
-                <td className="tableTitle">{data.tableTitle}</td>
-                <td className="tableText">{data.tableText}</td>
-            </tr>
-            ))}
+            <tbody>
+              {tableData.map((data,index)=>(
+                <tr key={index} className="tableCol">
+                  <td className="tableTitle">{data.tableTitle}</td>
+                  <td className="tableText">{data.tableText}</td>
+              </tr>
+              ))}
+            </tbody>
           </table>
         </div>
         <div className="section1Right">
@@ -55,6 +56,7 @@ function Section1() {
             {yearNumData.map((numData,index)=>(
               <p key={index}>{numData.yearNum}</p>
             ))}
+            <div className='sectionLeftBorderMove' style={{backgroundColor : bgColor}}></div>
           </div>
           <div className="sectionRightBorder">
           {yearTextData.map((textData,index)=>(

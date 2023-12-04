@@ -25,8 +25,7 @@
         "soldier" : "2018.03.06 ~ 2019.11.04",
         "caps" : "2020.01.28 ~ 2023.03.15",
         "student" : "2023.05.31 ~ 2023.12.18",
-        "developer" : "2023.12.16 ~ 2060.12.31",
-        "dream" : "2071.01.01 ~"
+        "developer" : "2023.12.16 ~ 2060.12.31"
     },
     "YearText" : {
         "name" : "조성민",
@@ -35,7 +34,6 @@
         "soldier" : "군인",
         "caps" : "SK 쉴더스 (前 ADT 캡스)",
         "student" : "그린 컴퓨터 아카데미 (프론트엔드 과정)",
-        "developer" : "Front-end developer 전문가",
-        "dream" : "서울 아파트 매매"
+        "developer" : "Front-end developer 전문가"
     }
 }

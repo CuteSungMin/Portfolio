@@ -1,17 +1,16 @@
 import * as THREE from 'three';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect} from 'react';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
 import model from '../img/ProjectLogo.glb'
 import "../css/logo.css"
 
-const Logo = ({onInputChange}) => {
+const Logo = ({onInputChange, inputValues}) => {
+    const {bgColor} = inputValues;
     const inputChange = (e)=>{
         const {name, value} = e.target;
         onInputChange(name,value)
     }
-
-
 
     const topSec1 = ()=>{
         window.scrollTo({
@@ -60,7 +59,7 @@ const Logo = ({onInputChange}) => {
     scene.add(camera)
 
     //빛
-    const point = new THREE.PointLight('whtie' , 1000)
+    const point = new THREE.PointLight('white' , 1000)
     point.position.y = 2;
     
     const point1 = new THREE.PointLight('white' , 1000)
@@ -109,22 +108,27 @@ const Logo = ({onInputChange}) => {
         renderer.setSize(introCurrnet.clientWidth, introCurrnet.clientHeight);
         renderer.render(scene,camera);
     });
- },[])
+ },)
     //모바일 버전 제한
     function isMobileDevice() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
     return ( 
         <section className='introLogo' ref={intro}>
-            <div className='introNav'>
+            <div className='introNav' style={{backgroundColor : bgColor}}>
                 <p onClick={topSec1}>History</p>
                 <p onClick={topSec2}>Support</p>
                 <p onClick={topSec3}>Project</p>
             </div>
             <div className='logoInputWrap'>
-                <input type='text' placeholder='배경색을 바꿔보세요!' name="bgColor" onChange={inputChange}></input>
-                <input type='text' placeholder='입자색을 입력해보세요!' name="cubeColor" onChange={inputChange}></input>
-                <input type='text' placeholder='속도 조절해보세요!' name="cubeSpeed" onChange={inputChange}></input>
+                <div className='logoInputBg'>
+                    <h1>배경색</h1>
+                    <div><input className='inputBg' type='color' placeholder='배경색을 바꿔보세요!' name="bgColor" onChange={inputChange}></input></div>
+                </div>
+                <div className='logoInputMesh'>
+                    <h1>입자색</h1>
+                    <div><input className='inputMesh' type='color' placeholder='입자색을 입력해보세요!' name="cubeColor" onChange={inputChange}></input></div>
+                </div>
             </div>
         </section>
      );

@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect} from 'react';
 import "../css/bg.css"
 
 function Bg({inputValues}){
-    const {bgColor, cubeColor, cubeSpeed} = inputValues;
+    const {bgColor, cubeColor} = inputValues;
     const sky = useRef();
     useEffect(()=>{
         
@@ -56,10 +56,9 @@ function Bg({inputValues}){
 
         // 입자
         const particlesGeometry = new THREE.BoxGeometry(0.003,0.003,0.003);  // 입자의 크기임
-        const particlesMaterial = new THREE.MeshBasicMaterial({ color: cubeColor || 'white' }); //입자 색
+        const particlesMaterial = new THREE.MeshBasicMaterial({ color: new THREE.Color(cubeColor || 'white') }); //입자 색
         const particlesMeshes = [];
-        console.log(cubeColor)
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 500; i++) {
             const particlesMesh = new THREE.Mesh(particlesGeometry, particlesMaterial);
             particlesMesh.position.x = (Math.random() - 0.5) * (Math.random() * 10);
             particlesMesh.position.y = (Math.random() - 0.5) * (Math.random() * 10);
@@ -74,29 +73,22 @@ function Bg({inputValues}){
             window.requestAnimationFrame(animate);
             const delta = clock.getDelta();
             particlesMeshes.forEach((particle) => {
-                particle.position.y -= delta / 20; // y축으로 떨어지기
-                if (particle.position.y < -3) {
-                    particle.position.y = 3;
+                particle.position.y -= delta / 15; // y축으로 떨어지기
+                if (particle.position.y < -2) {
+                    particle.position.set(
+                        (Math.random() - 0.5) * (Math.random() * 10),
+                        (Math.random() - 0.5) * (Math.random() * 10),
+                        (Math.random() - 0.5) * (Math.random() * 10)
+                    );
                 } // 무한으로 떨어지는 거 구현
-
-                if(window.scrollY >= 970){
-                    particle.rotation.x -= delta/30;
-                }
-                if(window.scrollY >= 1890){
-                    particle.rotation.z += delta/30;
-                    }
             });
-
-
-
             renderer.render(scene, camera);
         };
     animate();
-  }, [bgColor, cubeColor, cubeSpeed])
+  }, [bgColor, cubeColor])
   return(
-    <section id="bgSection" ref={sky}>
+    <section id="bgSection" style={{backgroundColor : bgColor}} ref={sky}>
     </section>
   );
 } 
 export default Bg;
-

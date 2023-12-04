@@ -2,8 +2,93 @@
     color: #fff;
     font-size: 40px;
     text-align: center;
+    margin: 40px 0 30px;
+}
+.sec3ContentWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.sec3ContentWrap>div{
+    width: calc(100%/2);
+    border: 1px solid #fff;
+    padding: 30px;
+    color: #fff;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec3LeftContentWrap{
+    position: relative;
 }
 
+.sec3ContentWrapTitle{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.sec3ContentWrapBotTitle{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.sec3ContentWrapText{
+    font-size: 16px;
+    font-weight: bold;
+    color: #F21137;
+    margin-bottom: 60px;
+}
+.sec3Link{
+    display: flex;
+    justify-content: space-between;
+}
+.sec3Img{
+    position: absolute;
+    z-index: -1;
+    width: 90%;
+    height: 85%;
+    opacity: 0.3;
+}
+/* .sec3Article>div:first-child>div:first-child{
+    border-right: none;
+} */
+.sec3Article>div:first-child>div:first-child>div:nth-child(2){
+    display: none;
+}
+/* .sec3Article>div:first-child>div:nth-child(2){
+    border-left: none;
+} */
+.sec3Article>div:first-child>div:first-child>img{
+    display: none;
+}
+.topLeftBox{
+    width: 30px; height: 30px;
+    background-color: #000;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+.topRightBox{
+    width: 30px; height: 30px;
+    background-color: #000;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.botLeftBox{
+    width: 30px; height: 30px;
+    background-color: #000;
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+}
+.botRightBox{
+    width: 30px; height: 30px;
+    background-color: #000;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+}
+.sec3RightContentWrap{
+    position: relative;
+}
 
 
 
