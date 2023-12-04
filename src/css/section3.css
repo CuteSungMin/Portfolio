@@ -133,6 +133,11 @@
         height: 85%;
     }
 }
+@media (max-width : 500px){
+    .sec3ImgWrap video {
+        display: block;
+      }
+}
 @media (max-width : 460px){
     .sec3ContentWrapTitle{
         font-size: 20px;
