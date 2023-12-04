@@ -8,6 +8,21 @@
 .section1Article>div{
     width: calc(100% / 2);
 }
+.logoInputWrap{
+    position: absolute;
+    bottom: 50px;
+    left: 45%;
+}
+.logoInputBg{
+    display: flex;
+}
+.logoInputBg>h1{
+    color: #fff;
+    margin-right: 10px;
+}
+.inputBg{
+    border: none;
+}
 .section1Logo{
     width: 200px;
     margin-bottom: 50px;

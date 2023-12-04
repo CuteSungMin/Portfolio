@@ -2,7 +2,7 @@
     color: #fff;
     font-size: 40px;
     text-align: center;
-    margin: 40px 0 30px;
+    margin: 60px 0 30px;
 }
 .sec3ContentWrap{
     display: flex;
@@ -22,7 +22,7 @@
 }
 
 .sec3ContentWrapTitle{
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 .sec3ContentWrapBotTitle{
@@ -42,7 +42,7 @@
 .sec3Img{
     position: absolute;
     z-index: -1;
-    width: 90%;
+    width: 92%;
     height: 85%;
     opacity: 0.3;
 }
@@ -89,6 +89,48 @@
 .sec3RightContentWrap{
     position: relative;
 }
-
-
+@media (max-width : 1024px){
+    .sec3ContentWrap{
+        display: block;
+    }
+    .sec3ContentWrap>div{
+        width: 100%;
+        border: 1px solid #fff;
+        padding: 30px;
+        color: #fff;   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec3Img{
+        width: 92%;
+    }
+}
+@media (max-width : 768px){
+    .sec3ContentWrapTitle{
+        font-size: 30px;
+    }
+    .sec3ContentWrapBotTitle{
+        font-size: 16px;
+    }
+    .sec3ContentWrapText{
+        font-size: 14px;
+        color: #F21137;
+    }
+}
+@media (max-width : 460px){
+    .sec3ContentWrapTitle{
+        font-size: 20px;
+    }
+    .sec3ContentWrapBotTitle{
+        font-size: 14px;
+    }
+    .sec3ContentWrapText{
+        font-size: 12px;
+        color: #F21137;
+    }
+    .sec3Img{
+        width: 86%;
+    }
+}
 

@@ -19,9 +19,9 @@ function Main() {
   }
   return (
     <div className="App">
-        <Logo inputValues={inputValues} onInputChange={inputChange}/>
+        <Logo inputValues={inputValues}/>
         <Bg inputValues={inputValues}/>
-        <Section1 inputValues={inputValues}/>
+        <Section1 inputValues={inputValues} onInputChange={inputChange}/>
         <Section2/>
         <Section3 inputValues={inputValues}/>
     </div>

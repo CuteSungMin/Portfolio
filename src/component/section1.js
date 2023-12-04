@@ -2,8 +2,13 @@ import '../css/section1.css'
 import Logo from "../img/solid_white_logo.png"
 import Sec1Data from '../data/section1.json'
 
-function Section1({inputValues}) {
+function Section1({onInputChange, inputValues}) {
   const {bgColor} = inputValues;
+  const inputChange = (e)=>{
+      const {name, value} = e.target;
+      onInputChange(name,value)
+  }
+
   const tableData = [
     {tableTitle : Sec1Data.Title.name, tableText : Sec1Data.Text.name},
     {tableTitle : Sec1Data.Title.year, tableText : Sec1Data.Text.year},
@@ -36,7 +41,14 @@ function Section1({inputValues}) {
 
   return (
     <section className="section1">
+      
       <article className="w1500 section1Article">
+        <div className='logoInputWrap'>
+            <div className='logoInputBg'>
+                <h1>배경색</h1>
+                <div><input className='inputBg' type='color' placeholder='배경색을 바꿔보세요!' name="bgColor" onChange={inputChange}></input></div>
+            </div>
+        </div>
         <div className="section1Left">
           <img src={Logo} alt='logo' className="section1Logo"></img>
           <h1 className="section1Title">Brand History</h1>

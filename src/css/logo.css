@@ -17,30 +17,6 @@
 .introNav>p:hover{
     color: #F21137;
 }
-.logoInputWrap{
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.logoInputBg{
-    display: flex;
-}
-.logoInputBg>h1{
-    color: #fff;
-}
-.inputBg{
-    border: none;
-}
-.logoInputMesh{
-    display: flex;
-}
-.logoInputMesh>h1{
-    color: #fff;
-}
-.inputMesh{
-    border: none;
-}
 @media (max-width:1024px){
     .introNav{
         display: none;
