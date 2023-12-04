@@ -8,13 +8,11 @@
 .section1Article>div{
     width: calc(100% / 2);
 }
-.logoInputWrap{
-    position: absolute;
-    bottom: 50px;
-    left: 45%;
-}
 .logoInputBg{
     display: flex;
+    position: absolute;
+    top: 800px;
+    left: 45%;
 }
 .logoInputBg>h1{
     color: #fff;
@@ -145,6 +143,9 @@
 
 
 @media (max-width : 584px){
+    .logoInputBg{
+        left: 35%;
+    }
     .sectionRightBorder>p:nth-child(2){
         margin-bottom: 70px;
     }/* 글씨 깨지는거 반응형 으로 잡음*/

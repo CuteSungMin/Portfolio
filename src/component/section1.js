@@ -41,14 +41,11 @@ function Section1({onInputChange, inputValues}) {
 
   return (
     <section className="section1">
-      
-      <article className="w1500 section1Article">
-        <div className='logoInputWrap'>
             <div className='logoInputBg'>
-                <h1>배경색</h1>
-                <div><input className='inputBg' type='color' placeholder='배경색을 바꿔보세요!' name="bgColor" onChange={inputChange}></input></div>
+              <h1>배경색</h1>
+              <div><input className='inputBg' type='color' placeholder='배경색을 바꿔보세요!' name="bgColor" onChange={inputChange}></input></div>
             </div>
-        </div>
+      <article className="w1500 section1Article">
         <div className="section1Left">
           <img src={Logo} alt='logo' className="section1Logo"></img>
           <h1 className="section1Title">Brand History</h1>
