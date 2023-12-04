@@ -1,9 +1,26 @@
 import '../css/section3.css'
+import {useState} from "react"
 import Sec3Data from '../data/section3.json'
-import Page1 from "../img/page3.png"
+import Page1 from "../img/eBookVideo.mp4"
+import Page2 from "../img/festivalVideo.mp4"
+import Page3 from "../img/dictionary.mp4"
+import Page4 from "../img/kwangju.mp4"
+import Page5 from "../img/dreamCar.mp4"
+import Page6 from "../img/dominoPizza.mp4"
+import Page7 from "../img/dokdo.mp4"
 
 const Section3 = ({inputValues}) => {
     const {bgColor} = inputValues;
+
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+
+    const handleMouseEnter = (index) => {
+        setHoveredIndex(index);
+    };
+
+    const handleMouseLeave = () => {
+        setHoveredIndex(null);
+    };
 
     const sec3ContentData = [
         {sec3LeftTitle : Sec3Data.Title.div1Left,
@@ -14,7 +31,6 @@ const Section3 = ({inputValues}) => {
         sec3RightContentJsx : Sec3Data.content.jsx,
         sec3RightContentCss : Sec3Data.content.css,
         sec3RightContentThreejs : Sec3Data.content.threeJs,
-        sec3LeftImg : Page1,
         sec3RightImg : Page1,
     },
         {sec3LeftTitle : Sec3Data.Title.div2Left,
@@ -28,8 +44,8 @@ const Section3 = ({inputValues}) => {
         sec3RightContentReact : Sec3Data.content.react,
         sec3RightContentJsx : Sec3Data.content.jsx,
         sec3RightContentCss : Sec3Data.content.css,
-        sec3LeftImg : Page1,
-        sec3RightImg : Page1,
+        sec3LeftImg : Page2,
+        sec3RightImg : Page3,
     },
         {sec3LeftTitle : Sec3Data.Title.div3Left,
         sec3LeftBot : Sec3Data.botTitle.bot3Left,
@@ -42,8 +58,8 @@ const Section3 = ({inputValues}) => {
         sec3RightContentJsx : Sec3Data.content.jsx,
         sec3RightContentCss : Sec3Data.content.css,
         sec3RightContentThreejs : Sec3Data.content.threeJs,
-        sec3LeftImg : Page1,
-        sec3RightImg : Page1,
+        sec3LeftImg : Page4,
+        sec3RightImg : Page5,
     },
         {sec3LeftTitle : Sec3Data.Title.div4Left,
         sec3LeftBot : Sec3Data.botTitle.bot4Left,
@@ -53,8 +69,8 @@ const Section3 = ({inputValues}) => {
         sec3RightBot : Sec3Data.botTitle.bot4Right,
         sec3RightContentHtml : Sec3Data.content.html,
         sec3RightContentCss : Sec3Data.content.css,
-        sec3LeftImg : Page1,
-        sec3RightImg : Page1,
+        sec3LeftImg : Page6,
+        sec3RightImg : Page7,
     },
 
     ]
@@ -65,7 +81,9 @@ const Section3 = ({inputValues}) => {
             <div className='section3Title'><h1>PROJECT</h1></div>
             <article className='sec3Article w1500'>
                 {sec3ContentData.map((data, i)=>(
-                <div key={i} className='sec3ContentWrap'>
+                <div key={i} className='sec3ContentWrap' 
+                onMouseEnter={() => handleMouseEnter(i)}
+                onMouseLeave={handleMouseLeave}>
                     <div className='sec3LeftContentWrap' >
                         <div>
                             <h1 className='sec3ContentWrapTitle'>{data.sec3LeftTitle}</h1>
@@ -82,13 +100,17 @@ const Section3 = ({inputValues}) => {
                             <p>GIT</p>
                             <p>LINK</p>
                         </div>
-                        <img className='sec3Img' src={data.sec3LeftImg} alt='page1'/>
+                        <div className={`sec3ImgWrap ${hoveredIndex === i ? 'visible' : 'hidden'}`}>
+                            <video muted autoPlay loop  className='sec3Img' src={data.sec3LeftImg} alt='page'/>
+                        </div>
                         <div style={{backgroundColor : bgColor}}  className='topLeftBox'></div>
                         <div style={{backgroundColor : bgColor}}  className='topRightBox'></div>
                         <div style={{backgroundColor : bgColor}}  className='botLeftBox'></div>
                         <div style={{backgroundColor : bgColor}}  className='botRightBox'></div>
                     </div>
-                    <div className='sec3RightContentWrap'>
+                    <div className='sec3RightContentWrap'
+                        onMouseEnter={() => handleMouseEnter(i)}
+                        onMouseLeave={handleMouseLeave}>
                         <div>
                             <h1 className='sec3ContentWrapTitle'>{data.sec3RightTitle}</h1>
                             <p className='sec3ContentWrapBotTitle'>{data.sec3RightBot}</p>
@@ -104,7 +126,9 @@ const Section3 = ({inputValues}) => {
                             <p>GIT</p>
                             <p>LINK</p>
                         </div>
-                        <img className='sec3Img' src={data.sec3RightImg} alt='page1'/>
+                        <div className={`sec3ImgWrap ${hoveredIndex === i ? 'visible' : 'hidden'}`}>
+                            <video muted autoPlay loop className='sec3Img' src={data.sec3RightImg} alt='page'/>
+                        </div>
                         <div style={{backgroundColor : bgColor}}  className='topLeftBox'></div>
                         <div style={{backgroundColor : bgColor}}  className='topRightBox'></div>
                         <div style={{backgroundColor : bgColor}}  className='botLeftBox'></div>
