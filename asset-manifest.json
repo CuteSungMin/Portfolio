@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d017574c.css",
-    "main.js": "/Portfolio/static/js/main.536e523a.js",
-    "static/media/page3.png": "/Portfolio/static/media/page3.463e7bcfa0ce02d444ba.png",
+    "main.css": "/Portfolio/static/css/main.234f1856.css",
+    "main.js": "/Portfolio/static/js/main.83179e2e.js",
+    "static/media/festivalVideo.mp4": "/Portfolio/static/media/festivalVideo.00aa263f9196a57fd265.mp4",
+    "static/media/kwangju.mp4": "/Portfolio/static/media/kwangju.88d745e9889caa717475.mp4",
+    "static/media/eBookVideo.mp4": "/Portfolio/static/media/eBookVideo.0ae1841c0b1e739811b2.mp4",
+    "static/media/dreamCar.mp4": "/Portfolio/static/media/dreamCar.a8375d528b3264f03bff.mp4",
+    "static/media/dominoPizza.mp4": "/Portfolio/static/media/dominoPizza.8116be054107f207b9f9.mp4",
+    "static/media/dictionary.mp4": "/Portfolio/static/media/dictionary.5385a899417ce37fa1b5.mp4",
+    "static/media/dokdo.mp4": "/Portfolio/static/media/dokdo.2325661c772507265762.mp4",
     "static/media/ProjectLogo.glb": "/Portfolio/static/media/ProjectLogo.7a4119ec372fec83d9a8.glb",
     "index.html": "/Portfolio/index.html",
-    "main.d017574c.css.map": "/Portfolio/static/css/main.d017574c.css.map",
-    "main.536e523a.js.map": "/Portfolio/static/js/main.536e523a.js.map"
+    "main.234f1856.css.map": "/Portfolio/static/css/main.234f1856.css.map",
+    "main.83179e2e.js.map": "/Portfolio/static/js/main.83179e2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d017574c.css",
-    "static/js/main.536e523a.js"
+    "static/css/main.234f1856.css",
+    "static/js/main.83179e2e.js"
   ]
 }
