@@ -13,14 +13,14 @@
     },
     "imgText" : {
         "html" : "포트폴리오를 만들기 위한 기본을 탄탄하게 잡아주셨습니다.",
-        "js" : "포트폴리오의 DATA들과 DYNAMIC들을 도움주셨습니다.",
-        "nodeJs" : "TERMINAL로 RUN TIME과 GIT HUB UPLOAD를 해주셨습니다",
+        "js" : "포트폴리오의 DATA 들과 DYNAMIC들을 도움 주셨습니다.",
+        "nodeJs" : "TERMINAL로 RUN TIME과 GIT HUB UPLOAD를 해주셨습니다.",
         "react" : "DATA의 CHANGE와 COMPONENT RECYCLING으로 작업량을 줄여주셨습니다.",
-        "ThreeJs" : "MAIN INTRO 화면의 CSM 로고를 표현해주셨습니다.",
-        "css" : "기본적인 Design과 Layout을 표현 할 수 있었으며 Animation 으로 기본에 충실한 시각적 표현해주셨습니다.",
-        "figma" : "머릿속에 있는 디자인들을 시각화 할 수 있게 도와주셨습니다. ",
-        "ai" : "포트폴리오의 VECTOR 로고, 이미지 등을 제작 해주셨습니다.",
-        "photoshop" : "BITMAP 이미지들을 수정 하였으나 아쉽게도 포트폴리오에 사용 되진 않았습니다.",
-        "blender" : "3D 브랜드 로고를 모델링 해주셨습니다."
+        "ThreeJs" : "MAIN INTRO 화면의 CSM 로고를 표현해 주셨습니다.",
+        "css" : "기본적인 Design과 Layout을 표현할 수 있었으며 Animation으로 기본에 충실한 시각적 표현해 주셨습니다.",
+        "figma" : "머릿속에 있는 디자인들을 시각화할 수 있게 도와주셨습니다.",
+        "ai" : "포트폴리오의 VECTOR 로고, 이미지 등을 제작해 주셨습니다.",
+        "photoshop" : "BITMAP 이미지들을 수정하였으나 아쉽게도 포트폴리오에 사용되진 않았습니다.",
+        "blender" : "3D 브랜드 로고를 모델링해 주셨습니다."
     }
 }

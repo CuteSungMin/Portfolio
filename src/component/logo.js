@@ -5,7 +5,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
 import model from '../img/ProjectLogo.glb'
 import "../css/logo.css"
 
-const Logo = ({inputValues}) => {
+const Logo = ({inputValues, textColor}) => {
     const {bgColor} = inputValues;
 
     const topSec1 = ()=>{
@@ -109,12 +109,12 @@ const Logo = ({inputValues}) => {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
-    return ( 
+    return (
         <section className='introLogo' ref={intro}>
-            <div className='introNav' style={{backgroundColor : bgColor}}>
-                <p onClick={topSec1}>History</p>
-                <p onClick={topSec2}>Support</p>
-                <p onClick={topSec3}>Project</p>
+            <div className='introNav' style={{backgroundColor : bgColor, borderBottom :`1px solid ${textColor}`}}>
+                <p style={{color : textColor}} onClick={topSec1}>History</p>
+                <p style={{color : textColor}} onClick={topSec2}>Support</p>
+                <p style={{color : textColor}} onClick={topSec3}>Project</p>
             </div>
  
         </section>

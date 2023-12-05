@@ -58,15 +58,10 @@
   .sec3ContentWrap:hover .sec3ImgWrap video {
     display: block;
   }
-/* .sec3Article>div:first-child>div:first-child{
-    border-right: none;
-} */
+
 .sec3Article>div:first-child>div:first-child>div:nth-child(2){
     display: none;
 }
-/* .sec3Article>div:first-child>div:nth-child(2){
-    border-left: none;
-} */
 .sec3Article>div:first-child>div:first-child>img{
     display: none;
 }
@@ -140,6 +135,12 @@
     .sec3ImgWrap video {
         display: block;
       }
+      .sec3Article>div:first-child>div:first-child>div:nth-child(2){
+        display: none;
+    }
+    .sec3Article>div:first-child>div:first-child>img{
+        display: none;
+    }
 }
 @media (max-width : 460px){
     .sec3ContentWrapTitle{

@@ -18,7 +18,7 @@ import ThreeJsSvg from "../img/ThreeJsSvg.js"
 
 
 
-const Section2 = () => {
+const Section2 = ({textColor}) => {
     const contentData = [
         { svgImg : <HtmlSvg/>, imgTitle : Sec2Data.imgTitle.html, imgText: Sec2Data.imgText.html},
         { svgImg : <JsSvg/>, imgTitle : Sec2Data.imgTitle.js, imgText: Sec2Data.imgText.js},
@@ -35,11 +35,11 @@ const Section2 = () => {
     // 콘텐츠들 컴포넌트
     const Sec2Content = ({imgTitle,imgText, svgImgBox})=>{
         return(
-            <div className='sec2ItemWrap'>
+            <div style={{border :`1px solid ${textColor}`}} className='sec2ItemWrap'>
                 <div className='sec2Img'>{svgImgBox}</div>
                 <div className='sec2Text'>
                     <h1 className="imgTitle">{imgTitle}</h1>
-                    <p className="imgText">{imgText}</p>
+                    <p style={{color : textColor}} className="imgText">{imgText}</p>
                 </div>
             </div>
         )
@@ -47,7 +47,7 @@ const Section2 = () => {
 
     return ( 
         <section className='section2'>
-            <div className='section2Title'><h1>SUPPORT</h1></div>
+            <div className='section2Title'><h1 style={{color : textColor}}>SUPPORT</h1></div>
             <article className='w1500 section2Article'>
                 <div className='section2Content'>
                     {contentData.map((data, index) => (

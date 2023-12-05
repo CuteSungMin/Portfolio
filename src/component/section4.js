@@ -1,10 +1,10 @@
 import '../css/section4.css'
 import BlackLogo from "../img/solid_bold_LOGO.png"
 
-const Section4 = () => {
+const Section4 = ({textColor}) => {
     return ( 
         <section>
-            <div className='section4Title'><h1>THANK U</h1></div>
+            <div className='section4Title'><h1 style={{color : textColor}}>THANK U</h1></div>
             <article className="sec4Article w1500">
                 <div className='contactBox'>
                     <div className='contactWrap'>
