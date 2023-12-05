@@ -10,19 +10,19 @@ const Logo = ({inputValues}) => {
 
     const topSec1 = ()=>{
         window.scrollTo({
-            top: `970`,
+            top: `950`,
             behavior: `smooth`
         })
     }
     const topSec2 = ()=>{
         window.scrollTo({
-            top: `1890`,
+            top: `1800`,
             behavior: `smooth`
         })
     }
     const topSec3 = ()=>{
         window.scrollTo({
-            top: `1000`,
+            top: `2650`,
             behavior: `smooth`
         })
     }
@@ -102,13 +102,13 @@ const Logo = ({inputValues}) => {
         renderer.setSize(introCurrnet.clientWidth, introCurrnet.clientHeight);
         renderer.render(scene,camera);
     });
-
     
  },)
     //모바일 버전 제한
     function isMobileDevice() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
+
     return ( 
         <section className='introLogo' ref={intro}>
             <div className='introNav' style={{backgroundColor : bgColor}}>

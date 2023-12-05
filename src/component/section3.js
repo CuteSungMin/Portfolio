@@ -9,6 +9,7 @@ import Page5 from "../img/dreamCar.mp4"
 import Page6 from "../img/dominoPizza.mp4"
 import Page7 from "../img/dokdo.mp4"
 
+
 const Section3 = ({inputValues}) => {
     const {bgColor} = inputValues;
 
@@ -24,7 +25,7 @@ const Section3 = ({inputValues}) => {
 
     const sec3ContentData = [
         {sec3LeftTitle : Sec3Data.Title.div1Left,
-        sec3LeftBot : Sec3Data.botTitle.bot1Left,
+        sec3LeftBot : <span>ㅇㅇ</span>,
         sec3RightTitle : Sec3Data.Title.div1Right, 
         sec3RightBot : Sec3Data.botTitle.bot1Right,
         sec3RightContentReact : Sec3Data.content.react,
@@ -32,6 +33,8 @@ const Section3 = ({inputValues}) => {
         sec3RightContentCss : Sec3Data.content.css,
         sec3RightContentThreejs : Sec3Data.content.threeJs,
         sec3RightImg : Page1,
+        sec3RightGit : `https://github.com/wjdgma603/RepublicOfFreeCoding`,
+        sec3RightLink : `https://wjdgma603.github.io/RepublicOfFreeCoding/`,
     },
         {sec3LeftTitle : Sec3Data.Title.div2Left,
         sec3LeftBot : Sec3Data.botTitle.bot2Left,
@@ -43,9 +46,14 @@ const Section3 = ({inputValues}) => {
         sec3RightBot : Sec3Data.botTitle.bot2Right,
         sec3RightContentReact : Sec3Data.content.react,
         sec3RightContentJsx : Sec3Data.content.jsx,
+        sec3RightContentHtml : Sec3Data.content.html,
         sec3RightContentCss : Sec3Data.content.css,
         sec3LeftImg : Page2,
         sec3RightImg : Page3,
+        sec3LeftGit : `https://github.com/CuteSungMin/festival`,
+        sec3LeftLink : `https://cutesungmin.github.io/festival/`,
+        sec3RightGit : `https://github.com/CuteSungMin/dictionary`,
+        sec3RightLink : `https://cutesungmin.github.io/dictionary/`,
     },
         {sec3LeftTitle : Sec3Data.Title.div3Left,
         sec3LeftBot : Sec3Data.botTitle.bot3Left,
@@ -56,10 +64,13 @@ const Section3 = ({inputValues}) => {
         sec3RightBot : Sec3Data.botTitle.bot3Right,
         sec3RightContentReact : Sec3Data.content.react,
         sec3RightContentJsx : Sec3Data.content.jsx,
-        sec3RightContentCss : Sec3Data.content.css,
         sec3RightContentThreejs : Sec3Data.content.threeJs,
         sec3LeftImg : Page4,
         sec3RightImg : Page5,
+        sec3LeftGit : `https://github.com/CuteSungMin/Kwangju_CC_Renewal`,
+        sec3LeftLink : `https://cutesungmin.github.io/Kwangju_CC_Renewal/`,
+        sec3RightGit : `https://github.com/CuteSungMin/dreamCar`,
+        sec3RightLink : `https://cutesungmin.github.io/dreamCar/`,
     },
         {sec3LeftTitle : Sec3Data.Title.div4Left,
         sec3LeftBot : Sec3Data.botTitle.bot4Left,
@@ -71,6 +82,10 @@ const Section3 = ({inputValues}) => {
         sec3RightContentCss : Sec3Data.content.css,
         sec3LeftImg : Page6,
         sec3RightImg : Page7,
+        sec3LeftGit : `https://github.com/CuteSungMin/DominoPizza_CloneCoding`,
+        sec3LeftLink : `https://cutesungmin.github.io/DominoPizza_CloneCoding/`,
+        sec3RightGit : `https://github.com/CuteSungMin/Dokdo_CloneCoding`,
+        sec3RightLink : `https://cutesungmin.github.io/Dokdo_CloneCoding/`,
     },
 
     ]
@@ -97,8 +112,8 @@ const Section3 = ({inputValues}) => {
                             </div>
                         </div>
                         <div className='sec3Link'>
-                            <p>GIT</p>
-                            <p>LINK</p>
+                            <a href={data.sec3LeftGit} target='_blank' rel='noopener noreferrer'>GIT</a>
+                            <a href={data.sec3LeftLink} target='_blank' rel='noopener noreferrer'>LINK</a>
                         </div>
                         <div className={`sec3ImgWrap ${hoveredIndex === i ? 'visible' : 'hidden'}`}>
                             <video muted autoPlay loop  className='sec3Img' src={data.sec3LeftImg} alt='page'/>
@@ -123,8 +138,8 @@ const Section3 = ({inputValues}) => {
                             </div>
                         </div>
                         <div className='sec3Link'>
-                            <p>GIT</p>
-                            <p>LINK</p>
+                            <div><a href={data.sec3RightGit} target='_blank' rel='noopener noreferrer'>GIT</a></div>
+                            <div><a href={data.sec3RightLink} target='_blank' rel='noopener noreferrer'>LINK</a></div>
                         </div>
                         <div className={`sec3ImgWrap ${hoveredIndex === i ? 'visible' : 'hidden'}`}>
                             <video muted autoPlay loop className='sec3Img' src={data.sec3RightImg} alt='page'/>
@@ -143,5 +158,4 @@ const Section3 = ({inputValues}) => {
         </section>
      );
 }
- 
 export default Section3;

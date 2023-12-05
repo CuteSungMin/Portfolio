@@ -3,7 +3,7 @@ import { useRef, useEffect} from 'react';
 import "../css/bg.css"
 
 function Bg({inputValues}){
-    const {bgColor, cubeColor} = inputValues;
+    const {bgColor} = inputValues;
     const sky = useRef();
     useEffect(()=>{
         
@@ -56,7 +56,7 @@ function Bg({inputValues}){
 
         // 입자
         const particlesGeometry = new THREE.BoxGeometry(0.003,0.003,0.003);  // 입자의 크기임
-        const particlesMaterial = new THREE.MeshBasicMaterial({ color: new THREE.Color(cubeColor || 'white') }); //입자 색
+        const particlesMaterial = new THREE.MeshBasicMaterial({ color: new THREE.Color('white') }); //입자 색
         const particlesMeshes = [];
         for (let i = 0; i < 500; i++) {
             const particlesMesh = new THREE.Mesh(particlesGeometry, particlesMaterial);
@@ -73,7 +73,7 @@ function Bg({inputValues}){
             window.requestAnimationFrame(animate);
             const delta = clock.getDelta();
             particlesMeshes.forEach((particle) => {
-                particle.position.y -= delta / 15; // y축으로 떨어지기
+                particle.position.y -= delta / 10; // y축으로 떨어지기
                 if (particle.position.y < -2) {
                     particle.position.set(
                         (Math.random() - 0.5) * (Math.random() * 10),
@@ -85,7 +85,7 @@ function Bg({inputValues}){
             renderer.render(scene, camera);
         };
     animate();
-  }, [bgColor, cubeColor])
+  }, [bgColor])
   return(
     <section id="bgSection" style={{backgroundColor : bgColor}} ref={sky}>
     </section>

@@ -20,7 +20,6 @@
 .sec3LeftContentWrap{
     position: relative;
 }
-
 .sec3ContentWrapTitle{
     font-size: 30px;
     margin-bottom: 30px;
@@ -38,6 +37,10 @@
 .sec3Link{
     display: flex;
     justify-content: space-between;
+}
+.sec3Link a{
+    color: #fff;
+    text-decoration: none;
 }
 .sec3Img{
     position: absolute;

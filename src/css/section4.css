@@ -1,0 +1,167 @@
+.section4Title>h1{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 100px 0 100px;
+}
+.contactBox{
+    width: 600px;
+    padding: 30px;
+    margin: 0 auto 100px;
+    background-color: #fff;
+    text-align: center;
+}
+.contactWrap{
+    position: relative;
+}
+.contactName{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 120px auto 120px;
+}
+.name1{
+    position: relative;
+    animation: nameC 10s  infinite ease-in;
+}
+@keyframes nameC {
+    0%{ top: 0px; right: 0px;}
+    50%{top: -30px; right: -80px;}
+    60%{top: -30px; right: -80px; opacity: 0;}
+    100%{top: -30px; right: -80px; opacity: 0;}
+}
+.name2{
+    position: relative;
+    animation: nameS 10s  infinite ease-in;
+}
+@keyframes nameS {
+    0%{ top: 0px; right: 0px;}
+    50%{top: 30px ;right: 0px;}
+    60%{top: 30px ;right: 0px; opacity: 0;}
+    100%{top: 30px ;right: 0px; opacity: 0;}
+}
+.name3{
+    position: relative;
+    animation: nameM 10s  infinite ease-in;
+}
+@keyframes nameM {
+    0%{ top: 0px; right: 0px;}
+    50%{top: 33px ;right: 45px;}
+    60%{top: 33px ;right: 45px; opacity: 0; }
+    100%{top: 33px ;right: 45px; opacity: 0; }
+}
+.nameNone{
+    animation: nameNone 10s  infinite ease-in;
+}
+@keyframes nameNone{
+    0%{opacity: 1;}
+    30%{opacity: 0;}
+    100%{opacity: 0;}
+}
+.contactLogo{
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    animation: contactLogoMove 10s  infinite ease-in;
+}
+@keyframes contactLogoMove{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    51%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@media (max-width : 768px){
+    .contactBox{
+        width: 400px;
+        padding: 20px;
+    }
+    .contactName{
+        margin: 80px auto 80px;
+        font-size: 30px;
+    }
+    .contactLogo{
+        width: 100px;
+    }
+    @keyframes nameC {
+        0%{ top: 0px; right: 0px;}
+        50%{top: -25px; right: -60px;}
+        60%{top: -25px; right: -60px; opacity: 0;}
+        100%{top: -25px; right: -60px;}
+    }
+    @keyframes nameS {
+        0%{ top: 0px; right: 0px;}
+        50%{top: 25px ;right: 0px;}
+        60%{top: 25px ;right: 0px; opacity: 0;}
+        100%{top: 25px ;right: 0px;}
+    }
+    @keyframes nameM {
+        0%{ top: 0px; right: 0px;}
+        50%{top: 25px ;right: 35px;}
+        60%{top: 25px ;right: 35px; opacity: 0; }
+        100%{top: 25px ;right: 35px;}
+    }
+}
+@media (max-width : 584px){
+    .contactBox{
+        width: 300px;
+        padding: 20px;
+    }
+    .contactName{
+        margin: 70px auto 70px;
+        font-size: 24px;
+    }
+    .contactLogo{
+        width: 80px;
+    }
+    @keyframes nameC {
+        0%{ top: 0px; right: 0px;}
+        50%{top: -20px; right: -47px;}
+        60%{top: -20px; right: -47px; opacity: 0;}
+        100%{top: -20px; right: -47px;}
+    }
+    @keyframes nameS {
+        0%{ top: 0px; right: 0px;}
+        50%{top: 20px ;right: 0px;}
+        60%{top: 20px ;right: 0px; opacity: 0;}
+        100%{top: 20px ;right: 0px;}
+    }
+    @keyframes nameM {
+        0%{ top: 0px; right: 0px;}
+        50%{top: 20px ;right: 27px;}
+        60%{top: 20px ;right: 27px; opacity: 0; }
+        100%{top: 20px ;right: 27px;}
+    }
+}
+@media (max-width : 460px){
+    .contactBox{
+        width: 250px;
+        padding: 20px;
+    }
+    .contactName{
+        margin: 50px auto 50px;
+        font-size: 20px;
+    }
+    .contactLogo{
+        width: 70px;
+    }
+    @keyframes nameC {
+        0%{ top: 0px; right: 0px;}
+        50%{top: -17px; right: -40px;}
+        60%{top: -17px; right: -40px; opacity: 0;}
+        100%{top: -17px; right: -40px;}
+    }
+    @keyframes nameS {
+        0%{ top: 0px; right: 0px;}
+        50%{top: 17px ;right: 0px;}
+        60%{top: 17px ;right: 0px; opacity: 0;}
+        100%{top: 17px ;right: 0px;}
+    }
+    @keyframes nameM {
+        0%{ top: 0px; right: 0px;}
+        50%{top: 17px ;right: 20px;}
+        60%{top: 17px ;right: 20px; opacity: 0; }
+        100%{top: 17px ;right: 20px;}
+    }
+}
