@@ -12,7 +12,7 @@
     display: flex;
     position: absolute;
     top: 800px;
-    left: 45%;
+    left: 40%;
 }
 .logoInputBg>h1{
     color: #fff;
@@ -104,6 +104,12 @@
 
 
 @media (max-width : 1024px){
+    .logoInputBg{
+        left: 35%;
+    }
+    .logoInputBg>h1{
+        font-size: 20px;
+    }
     .section1Article{
         display: block;
     }
@@ -133,6 +139,9 @@
 
 
 @media (max-width : 768px){
+    .logoInputBg{
+        left: 25%;
+    }
     .sectionRightBorder>p:nth-child(6){
         margin-bottom: 70px;
     }/* 글씨 깨지는거 반응형 으로 잡음*/
@@ -144,7 +153,10 @@
 
 @media (max-width : 584px){
     .logoInputBg{
-        left: 35%;
+        left: 20%;
+    }
+    .logoInputBg>h1{
+        font-size: 16px;
     }
     .sectionRightBorder>p:nth-child(2){
         margin-bottom: 70px;
@@ -169,6 +181,9 @@
 
 
 @media (max-width : 460px){
+    .logoInputBg{
+        left: 15%;
+    }
     .section1Right>div:first-child{
     width: 40%;
     }
