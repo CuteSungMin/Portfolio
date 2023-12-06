@@ -2,6 +2,8 @@ import '../css/section1.css'
 import Logo from "../img/solid_white_logo.png"
 import Sec1Data from '../data/section1.json'
 
+
+
 function Section1({onInputChange, inputValues, textColor}) {
   const {bgColor} = inputValues;
   const inputChange = (e)=>{

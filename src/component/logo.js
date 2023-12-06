@@ -90,6 +90,7 @@ const Logo = ({inputValues, textColor}) => {
         }
         animate()
     }
+    
     renderer.render(scene, camera)
 
     if(isMobileDevice()){
@@ -104,6 +105,7 @@ const Logo = ({inputValues, textColor}) => {
     });
     
  },)
+ 
     //모바일 버전 제한
     function isMobileDevice() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);

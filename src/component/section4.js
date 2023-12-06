@@ -12,6 +12,9 @@ const Section4 = ({textColor}) => {
                         <div><img className='contactLogo' src={BlackLogo} alt='blackLogo'></img></div>
                     </div>
                 </div>
+                <div>
+                    <div></div>
+                </div>
             </article>
         </section>
      );

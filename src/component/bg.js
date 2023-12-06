@@ -4,11 +4,9 @@ import "../css/bg.css"
 
 function Bg({inputValues}){
     const {bgColor} = inputValues;
-    const sky = useRef();
+    const snow = useRef();
     useEffect(()=>{
-        
-    
-        const skys = sky.current
+        const snows = snow.current
         // Scene
         const scene = new THREE.Scene();
         //size
@@ -31,18 +29,20 @@ function Bg({inputValues}){
             canvas: document.createElement("canvas"),
             antialias: true,
             alpha: true 
+            
         });
+        
 
         renderer.setSize(sizes.width, sizes.height);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         renderer.setClearColor(0x000000, 0.0);
         
-        skys.appendChild(renderer.domElement);
+        snows.appendChild(renderer.domElement);
 
         window.addEventListener("resize", () => {
             // Update sizes
-            sizes.width = skys.clientWidth;
-            sizes.height = skys.clientHeight;
+            sizes.width = snows.clientWidth;
+            sizes.height = snows.clientHeight;
 
             // Update camera
             camera.aspect = sizes.width / sizes.height;
@@ -87,7 +87,7 @@ function Bg({inputValues}){
     animate();
   }, [bgColor])
   return(
-    <section id="bgSection" style={{backgroundColor : bgColor}} ref={sky}>
+    <section id="bgSection" style={{backgroundColor : bgColor}} ref={snow}>
     </section>
   );
 } 
