@@ -6,11 +6,10 @@
         "div2Right" : "프론트엔드 사전",
         "div3Left" : "광주 컨트리 클럽 리뉴얼",
         "div3Right" : "부릉부릉",
-        "div4Left" : "도미노 피자 리뉴얼",
-        "div4Right" : "독도 리뉴얼"
+        "div4Left" : "도미노 피자 클론 코딩",
+        "div4Right" : "독도 클론 코딩"
     },
     "botTitle" : {
-        "bot1Left" : "d",
         "bot1Right" : "TEAM PROJECT",
         "bot2Left" : "TEAM PROJECT - LEADER",
         "bot2Right" : "PROJECT - ALONE",
@@ -19,10 +18,20 @@
         "bot4Left" : "PROJECT - ALONE",
         "bot4Right" : "PROJECT - ALONE"
     },
+    "botText" : {
+        "bot1Left" : "메인 THREE.JS와 문제집 풀기 PAGE를 담당 했습니다.",
+        "bot1Right" : "조장으로써 화합과 퀄리티 수정 등을 노력 하였습니다.",
+        "bot2Left" : "REACT의 첫 프로젝트며 데이터 관리에 신경 썼습니다.",
+        "bot2Right" : "첫 JS 프로젝트며 기존 광주CC 사이트를 리뉴얼 했습니다.",
+        "bot3Left" : "보면서 힘내려고 THREE.JS에 꿈을 넣어봤습니다.",
+        "bot3Right" : "Vanilla JavaScript로 첫 클론코딩을 해봤습니다.",
+        "bot4Left" : "학원 다니면서 첫 프로젝트며 HTML, CSS로만 만들었습니다.",
+        "bot4Right" : "8"
+    },
     "content" : {
         "react" : "# REACT",
         "jsx" : "# JSX",
-        "threeJs" : "# THREE JS",
+        "threeJs" : "# THREE.JS",
         "css" : "# CSS",
         "html" : "# HTML"
     },

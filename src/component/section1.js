@@ -46,7 +46,6 @@ function Section1({onInputChange, inputValues, textColor}) {
             <div className='logoInputBg'>
               <h1 style={{color : textColor}}>배경색</h1>
               <div><input style={{border :`1px solid ${textColor}`}} className='inputBg' type='color'name="bgColor" onChange={inputChange}></input></div>
-              <h1 style={{color : textColor}}>을 바꿔보세요.</h1>
             </div>
       <article className="w1500 section1Article">
         <div className="section1Left">

@@ -1,7 +1,7 @@
 .introNav{
     width: 100%;
     display: flex;
-    background-color: rgb(0,0,0);
+    background-color: #050505;
     border-bottom: 1px solid #fff;
     justify-content: flex-end;
     position: fixed;
@@ -10,12 +10,42 @@
 }
 .introNav>p{
     color: #fff;
-    font-size: 20px;
-    padding: 40px 20px;
+    font-size: 16px;
+    padding: 20px 10px;
     cursor: pointer;
 }
-.introNav>p:hover{
-    color: #F21137;
+.introTitle{
+    position: absolute;
+    display: flex;
+    top: 200px;
+    color: #fff;
+}
+.introTitleTextWrap{
+    height: 21px;
+    overflow: hidden;
+}
+.introTitleText{
+    animation: introTitleText 5s infinite;
+}
+@keyframes introTitleText{
+    0%{transform:translateY(0%) ;}
+    25%{transform:translateY(50%) ;}
+    50%{transform:translateY(-100%) ;}
+    75%{transform:translateY(-50%) ;}
+    100% { transform: translateY(0%); }
+}
+.introTitleTextClone{
+    animation: introTitleTextClone 5s infinite;
+}
+@keyframes introTitleTextClone{
+    0%{transform:translateY(-200%) ;}
+    25%{transform:translateY(-150%) ;}
+    50%{transform:translateY(-100%) ;}
+    75%{transform:translateY(-50%) ;}
+    100% { transform: translateY(-200%); }
+}
+.introText{
+    margin-left: 20px;
 }
 @media (max-width:1024px){
     .introNav{

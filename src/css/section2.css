@@ -28,7 +28,7 @@
 }
 .sec2Img{
     width: 100px; height: 100px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
 }
 .sec2Text{
     text-align: start;
@@ -36,7 +36,7 @@
 .imgTitle{
     font-size: 20px;
     color: #F21137;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .imgText{
     color: #fff;
@@ -53,8 +53,8 @@
   @keyframes strokeMove{
     0%{stroke: #000;}
     60%{stroke: #000;}
-    61%{fill: #fff; stroke-dashoffset: 360px;}
-    100%{fill: #fff; stroke-dashoffset: 360px;}
+    61%{fill: #f1f1f1; stroke-dashoffset: 360px;}
+    100%{fill: #f1f1f1; stroke-dashoffset: 360px;}
   }
 
 @media (max-width : 1500px){

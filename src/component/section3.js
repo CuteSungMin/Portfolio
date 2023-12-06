@@ -23,73 +23,83 @@ const Section3 = ({inputValues,textColor}) => {
     };
 
     const sec3ContentData = [
-        {sec3LeftTitle : Sec3Data.Title.div1Left,
-        sec3LeftBot : <span>2023.05.31 ~ 2023.12.18의 프로젝트입니다.
-            <br/>팀 프로젝트의 목표는 소통이며,
-            <br/>개인 프로젝트의 목표는 성장이었습니다.
+        {
+        sec3Title : Sec3Data.Title.div1Right, 
+        sec3Bot : Sec3Data.botTitle.bot1Right,
+        sec3BotText : Sec3Data.botText.bot1Left,
+        sec3ContentReact : Sec3Data.content.react,
+        sec3ContentJsx : Sec3Data.content.jsx,
+        sec3ContentCss : Sec3Data.content.css,
+        sec3ContentThreejs : Sec3Data.content.threeJs,
+        sec3Img : Page1,
+        sec3Git : `https://github.com/wjdgma603/RepublicOfFreeCoding`,
+        sec3Link : `https://wjdgma603.github.io/RepublicOfFreeCoding/`,
+    },
+        {sec3Title : Sec3Data.Title.div2Left,
+        sec3Bot : Sec3Data.botTitle.bot2Left,
+        sec3BotText : Sec3Data.botText.bot1Right,
+        sec3ContentReact : Sec3Data.content.react,
+        sec3ContentJsx : Sec3Data.content.jsx,
+        sec3ContentCss : Sec3Data.content.css,
+        sec3ContentThreejs : Sec3Data.content.threeJs,
+        sec3Img : Page2,
+        sec3Git : `https://github.com/CuteSungMin/festival`,
+        sec3Link : `https://cutesungmin.github.io/festival/`,
+    },
+        {
+        sec3Title : Sec3Data.Title.div2Right, 
+        sec3Bot : Sec3Data.botTitle.bot2Right,
+        sec3BotText : Sec3Data.botText.bot2Left,
+        sec3ContentReact : Sec3Data.content.react,
+        sec3ContentJsx : Sec3Data.content.jsx,
+        sec3ContentCss : Sec3Data.content.css,
+        sec3Img : Page3,
+        sec3Git : `https://github.com/CuteSungMin/dictionary`,
+        sec3Link : `https://cutesungmin.github.io/dictionary/`,
+    },
+        {sec3Title : Sec3Data.Title.div3Left,
+        sec3Bot : Sec3Data.botTitle.bot3Left,
+        sec3BotText : Sec3Data.botText.bot2Right,
+        sec3ContentHtml : Sec3Data.content.html,
+        sec3ContentCss : Sec3Data.content.css,
+        sec3ContentThreejs : Sec3Data.content.threeJs,
+        sec3Img : Page4,
+        sec3Git : `https://github.com/CuteSungMin/Kwangju_CC_Renewal`,
+        sec3Link : `https://cutesungmin.github.io/Kwangju_CC_Renewal/`,
+    },
+        {
+        sec3Title : Sec3Data.Title.div3Right, 
+        sec3Bot : Sec3Data.botTitle.bot3Right,
+        sec3BotText : Sec3Data.botText.bot3Left,
+        sec3ContentReact : Sec3Data.content.react,
+        sec3ContentThreejs : Sec3Data.content.threeJs,
+        sec3Img : Page5,
+        sec3Git : `https://github.com/CuteSungMin/dreamCar`,
+        sec3Link : `https://cutesungmin.github.io/dreamCar/`,
+    },
+        {sec3Title : Sec3Data.Title.div4Left,
+        sec3Bot : Sec3Data.botTitle.bot4Left,
+        sec3BotText : Sec3Data.botText.bot3Right,
+        sec3ContentHtml : Sec3Data.content.html,
+        sec3ContentCss : Sec3Data.content.css,
+        sec3Img : Page6,
+        sec3Git : `https://github.com/CuteSungMin/DominoPizza_CloneCoding`,
+        sec3Link : `https://cutesungmin.github.io/DominoPizza_CloneCoding/`,
+    },
+        {
+        sec3Title : Sec3Data.Title.div4Right,
+        sec3Bot : Sec3Data.botTitle.bot4Right,
+        sec3BotText : Sec3Data.botText.bot4Left,
+        sec3ContentHtml : Sec3Data.content.html,
+        sec3ContentCss : Sec3Data.content.css,
+        sec3Img : Page7,
+        sec3Git : `https://github.com/CuteSungMin/Dokdo_CloneCoding`,
+        sec3Link : `https://cutesungmin.github.io/Dokdo_CloneCoding/`,
+    },
+    {sec3Title : Sec3Data.Title.div1Left,
+        sec3Bot : <span>다음 PROJECT 준비중 입니다
         </span>,
-        sec3RightTitle : Sec3Data.Title.div1Right, 
-        sec3RightBot : Sec3Data.botTitle.bot1Right,
-        sec3RightContentReact : Sec3Data.content.react,
-        sec3RightContentJsx : Sec3Data.content.jsx,
-        sec3RightContentCss : Sec3Data.content.css,
-        sec3RightContentThreejs : Sec3Data.content.threeJs,
-        sec3RightImg : Page1,
-        sec3RightGit : `https://github.com/wjdgma603/RepublicOfFreeCoding`,
-        sec3RightLink : `https://wjdgma603.github.io/RepublicOfFreeCoding/`,
     },
-        {sec3LeftTitle : Sec3Data.Title.div2Left,
-        sec3LeftBot : Sec3Data.botTitle.bot2Left,
-        sec3LeftContentReact : Sec3Data.content.react,
-        sec3LeftContentJsx : Sec3Data.content.jsx,
-        sec3LeftContentCss : Sec3Data.content.css,
-        sec3LeftContentThreejs : Sec3Data.content.threeJs,
-        sec3RightTitle : Sec3Data.Title.div2Right, 
-        sec3RightBot : Sec3Data.botTitle.bot2Right,
-        sec3RightContentReact : Sec3Data.content.react,
-        sec3RightContentJsx : Sec3Data.content.jsx,
-        sec3RightContentHtml : Sec3Data.content.html,
-        sec3RightContentCss : Sec3Data.content.css,
-        sec3LeftImg : Page2,
-        sec3RightImg : Page3,
-        sec3LeftGit : `https://github.com/CuteSungMin/festival`,
-        sec3LeftLink : `https://cutesungmin.github.io/festival/`,
-        sec3RightGit : `https://github.com/CuteSungMin/dictionary`,
-        sec3RightLink : `https://cutesungmin.github.io/dictionary/`,
-    },
-        {sec3LeftTitle : Sec3Data.Title.div3Left,
-        sec3LeftBot : Sec3Data.botTitle.bot3Left,
-        sec3LeftContentHtml : Sec3Data.content.html,
-        sec3LeftContentCss : Sec3Data.content.css,
-        sec3LeftContentThreejs : Sec3Data.content.threeJs,
-        sec3RightTitle : Sec3Data.Title.div3Right, 
-        sec3RightBot : Sec3Data.botTitle.bot3Right,
-        sec3RightContentReact : Sec3Data.content.react,
-        sec3RightContentJsx : Sec3Data.content.jsx,
-        sec3RightContentThreejs : Sec3Data.content.threeJs,
-        sec3LeftImg : Page4,
-        sec3RightImg : Page5,
-        sec3LeftGit : `https://github.com/CuteSungMin/Kwangju_CC_Renewal`,
-        sec3LeftLink : `https://cutesungmin.github.io/Kwangju_CC_Renewal/`,
-        sec3RightGit : `https://github.com/CuteSungMin/dreamCar`,
-        sec3RightLink : `https://cutesungmin.github.io/dreamCar/`,
-    },
-        {sec3LeftTitle : Sec3Data.Title.div4Left,
-        sec3LeftBot : Sec3Data.botTitle.bot4Left,
-        sec3LeftContentHtml : Sec3Data.content.html,
-        sec3LeftContentCss : Sec3Data.content.css,
-        sec3RightTitle : Sec3Data.Title.div4Right, 
-        sec3RightBot : Sec3Data.botTitle.bot4Right,
-        sec3RightContentHtml : Sec3Data.content.html,
-        sec3RightContentCss : Sec3Data.content.css,
-        sec3LeftImg : Page6,
-        sec3RightImg : Page7,
-        sec3LeftGit : `https://github.com/CuteSungMin/DominoPizza_CloneCoding`,
-        sec3LeftLink : `https://cutesungmin.github.io/DominoPizza_CloneCoding/`,
-        sec3RightGit : `https://github.com/CuteSungMin/Dokdo_CloneCoding`,
-        sec3RightLink : `https://cutesungmin.github.io/Dokdo_CloneCoding/`,
-    },
-
     ]
 
 
@@ -101,50 +111,21 @@ const Section3 = ({inputValues,textColor}) => {
                 <div key={i} className='sec3ContentWrap' 
                 onMouseEnter={() => handleMouseEnter(i)}
                 onMouseLeave={handleMouseLeave}>
-                    <div style={{border :`1px solid ${textColor}`}} className='sec3LeftContentWrap' >
+                    <div style={{border :`1px solid ${textColor}`}} className='sec3DivContentWrap' >
                         <div>
-                            <h1 style={{color : textColor}} className='sec3ContentWrapTitle'>{data.sec3LeftTitle}</h1>
-                            <p style={{color : textColor}} className='sec3ContentWrapBotTitle'>{data.sec3LeftBot}</p>
+                            <h1 style={{color : textColor}} className='sec3ContentWrapTitle'>{data.sec3Title}</h1>
+                            <p style={{color : textColor}} className='sec3ContentWrapBotTitle'>{data.sec3Bot}</p>
+                            <p style={{color : textColor}} className='sec3ContentWrapBotText'>{data.sec3BotText}</p>
                             <div className='sec3ContentWrapText'>
-                                <p>{data.sec3LeftContentReact}</p>
-                                <p>{data.sec3LeftContentJsx}</p>
-                                <p>{data.sec3LeftContentThreejs}</p>
-                                <p>{data.sec3LeftContentHtml}</p>
-                                <p>{data.sec3LeftContentCss}</p>
+                                <p><span>{data.sec3ContentReact}</span> <span>{data.sec3ContentJsx}</span> <span>{data.sec3ContentThreejs}</span> <span>{data.sec3ContentHtml}</span> <span>{data.sec3ContentCss}</span></p>
                             </div>
                         </div>
                         <div style={{color : textColor}} className='sec3Link'>
-                            <a style={{color : textColor}} href={data.sec3LeftGit} target='_blank' rel='noopener noreferrer'>GIT</a>
-                            <a style={{color : textColor}} href={data.sec3LeftLink} target='_blank' rel='noopener noreferrer'>LINK</a>
+                            <a style={{color : textColor}} href={data.sec3Git} target='_blank' rel='noopener noreferrer'>GIT</a>
+                            <a style={{color : textColor}} href={data.sec3Link} target='_blank' rel='noopener noreferrer'>LINK</a>
                         </div>
                         <div className={`sec3ImgWrap ${hoveredIndex === i ? 'visible' : 'hidden'}`}>
-                            <video muted autoPlay loop  className='sec3Img' src={data.sec3LeftImg} alt='page'/>
-                        </div>
-                        <div style={{backgroundColor : bgColor}}  className='topLeftBox'></div>
-                        <div style={{backgroundColor : bgColor}}  className='topRightBox'></div>
-                        <div style={{backgroundColor : bgColor}}  className='botLeftBox'></div>
-                        <div style={{backgroundColor : bgColor}}  className='botRightBox'></div>
-                    </div>
-                    <div style={{border :`1px solid ${textColor}`}} className='sec3RightContentWrap'
-                        onMouseEnter={() => handleMouseEnter(i)}
-                        onMouseLeave={handleMouseLeave}>
-                        <div>
-                            <h1 style={{color : textColor}} className='sec3ContentWrapTitle'>{data.sec3RightTitle}</h1>
-                            <p style={{color : textColor}} className='sec3ContentWrapBotTitle'>{data.sec3RightBot}</p>
-                            <div className='sec3ContentWrapText'>
-                                <p>{data.sec3RightContentReact}</p>
-                                <p>{data.sec3RightContentJsx}</p>
-                                <p>{data.sec3RightContentThreejs}</p>
-                                <p>{data.sec3RightContentHtml}</p>
-                                <p>{data.sec3RightContentCss}</p>
-                            </div>
-                        </div>
-                        <div className='sec3Link'>
-                            <div><a style={{color : textColor}} href={data.sec3RightGit} target='_blank' rel='noopener noreferrer'>GIT</a></div>
-                            <div><a style={{color : textColor}} href={data.sec3RightLink} target='_blank' rel='noopener noreferrer'>LINK</a></div>
-                        </div>
-                        <div className={`sec3ImgWrap ${hoveredIndex === i ? 'visible' : 'hidden'}`}>
-                            <video muted autoPlay loop className='sec3Img' src={data.sec3RightImg} alt='page'/>
+                            <video muted autoPlay loop  className='sec3Img' src={data.sec3Img} alt='page'/>
                         </div>
                         <div style={{backgroundColor : bgColor}}  className='topLeftBox'></div>
                         <div style={{backgroundColor : bgColor}}  className='topRightBox'></div>
@@ -153,9 +134,6 @@ const Section3 = ({inputValues,textColor}) => {
                     </div>
                 </div>
                 ))}
-
-
-
             </article>
         </section>
      );

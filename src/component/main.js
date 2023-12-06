@@ -47,7 +47,7 @@ function Main() {
   const brightness = inputValues.bgColor ? rgbChangeFunc(inputValues.bgColor) : 0;
 
   // 밝기에 따라 글자 색상 결정
-  const textColor = brightness > 150 ? '#000' : '#fff';
+  const textColor = brightness > 150 ? '#050505' : '#f1f1f1';
   console.log(brightness)
 
   return (
