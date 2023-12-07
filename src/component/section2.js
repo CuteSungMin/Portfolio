@@ -47,7 +47,7 @@ const Section2 = ({textColor}) => {
 
     return ( 
         <section className='section2'>
-            <div className='section2Title'><h1 style={{color : textColor}}>SUPPORT</h1></div>
+            <div className='section2Title w1500'><h1 style={{color : textColor}}>SUPPORT</h1></div>
             <article className='w1500 section2Article'>
                 <div className='section2Content'>
                     {contentData.map((data, index) => (

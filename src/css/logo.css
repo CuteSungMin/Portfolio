@@ -18,39 +18,14 @@
     position: absolute;
     display: flex;
     font-size: 40px;
-    top: 15%;
+    bottom: 10%;
     left: 100px;
     color: #fff;
 }
-.introTitleTextWrap{
-    height: 54px;
-    overflow: hidden;
-}
-.introTitleText{
-    animation: introTitleText 10s infinite;
-}
-@keyframes introTitleText{
-    0%{transform:translateY(0%) ;}
-    25%{transform:translateY(50%) ;}
-    50%{transform:translateY(-100%) ;}
-    75%{transform:translateY(-50%) ;}
-}
-.introTitleTextClone{
-    animation: introTitleTextClone 10s infinite;
-}
-@keyframes introTitleTextClone{
-    0%{transform:translateY(-200%) ;}
-    25%{transform:translateY(-150%) ;}
-    50%{transform:translateY(-100%) ;}
-    75%{transform:translateY(-50%) ;}
-}
-.introText{
-    margin-left: 20px;
-}
+
 @media (max-width:1200px){
     .introTitle{
         font-size: 36px;
-        top: 15%;
         left: 80px;
     }
     .introTitleTextWrap{
@@ -63,7 +38,7 @@
     }
     .introTitle{
         font-size: 30px;
-        top: 15%;
+
         left: 40px;
     }
     .introTitleTextWrap{
@@ -73,7 +48,6 @@
 @media (max-width:768px){
     .introTitle{
         font-size: 24px;
-        top: 15%;
         left: 40px;
     }
     .introTitleTextWrap{
@@ -83,7 +57,6 @@
 @media (max-width:612px){
     .introTitle{
         font-size: 20px;
-        top: 15%;
         left: 20px;
     }
     .introTitleTextWrap{
@@ -93,7 +66,6 @@
 @media (max-width:501px){
     .introTitle{
         font-size: 18px;
-        top: 15%;
         left: 15px;
     }
     .introTitleTextWrap{

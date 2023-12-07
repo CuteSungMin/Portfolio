@@ -105,7 +105,7 @@ const Section3 = ({inputValues,textColor}) => {
 
     return ( 
         <section className='section3'>
-            <div className='section3Title'><h1 style={{color : textColor}}>PROJECT</h1></div>
+            <div className='section3Title w1500'><h1 style={{color : textColor}}>PROJECT</h1></div>
             <article className='sec3Article w1500'>
                 {sec3ContentData.map((data, i)=>(
                 <div key={i} className='sec3ContentWrap' 

@@ -28,16 +28,23 @@ const Logo = ({ inputValues, textColor }) => {
   };
 
   //시간 계산
-  const [howLong, setHowLong] = useState({ days: 0, hours: 0, minutes: 0 });
+  const [howLong, setHowLong] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
   const updateHowLong = () => {
     const targetDate = new Date('2023-05-31T00:00:00');
     setInterval(() => {
       const nowDate = new Date();
-      const longDate = nowDate - targetDate;
-      const realHours = Math.floor(longDate / (1000 * 60 * 60));
-      const days = Math.floor(realHours / 24);
-      const hours = Math.floor(realHours);
-      setHowLong({ days, hours});
+      const timeDiff = nowDate - targetDate;
+  
+
+        // 시간 차이가 양수일 때만 계산
+        const seconds = Math.floor(timeDiff / 1000) % 60;
+        const minutes = Math.floor(timeDiff / (1000 * 60)) % 60;
+        const hours = Math.floor(timeDiff / (1000 * 60 * 60)) % 24;
+        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+  
+        setHowLong({ days, hours, minutes, seconds });
+
     }, 1000);
   };
 
@@ -120,7 +127,12 @@ const Logo = ({ inputValues, textColor }) => {
     });
 
     // updateHowLong 함수 호출
-    updateHowLong();
+    const intervalId = updateHowLong();
+
+    return () => {
+      // 컴포넌트가 언마운트될 때 인터벌 정리
+      clearInterval(intervalId);
+    };
   }, []);
 
   // mobile version check
@@ -144,18 +156,8 @@ const Logo = ({ inputValues, textColor }) => {
       <div className='introTitle'>
         <div className='introTitleTextWrap'>
             <div className='introTitleText'>
-                <p style={{ color: textColor }}>{howLong.days}일</p>
-                <p style={{ color: textColor }}>{howLong.hours} 시간</p>
+                <p style={{ color: textColor }}><span>{howLong.days}일</span> <span>{howLong.hours}시간</span> <span>{howLong.minutes} 분</span> <span>{howLong.seconds} 초</span>의 신입 개발자</p>
             </div>
-            <div className='introTitleTextClone'>
-                <p style={{ color: textColor }}>{howLong.days}일</p>
-                <p style={{ color: textColor }}>{howLong.hours} 시간</p>
-            </div>
-        </div>
-        <div className='introText'>
-            <p style={{ color: textColor }}>의 신입 
-            <br/>FRONT-END 
-            <br/>DEVELOPER</p>
         </div>
       </div>
 
