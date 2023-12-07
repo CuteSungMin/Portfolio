@@ -25,7 +25,7 @@ function rgbChangeFunc(color) {
   const match = rgbColor.match(rgbRegex);
   // RGB 값 추출 및 숫자로 변환
   const values = match.slice(1).map(Number);
-  // 밝기 계산 (간단한 밝기 계산식 사용)
+  // 밝기 계산
   const brightness = (values[0] * 299 + values[1] * 587 + values[2] * 114) / 1000;
   return brightness;
 }
@@ -48,7 +48,6 @@ function Main() {
 
   // 밝기에 따라 글자 색상 결정
   const textColor = brightness > 150 ? '#050505' : '#f1f1f1';
-  console.log(brightness)
 
   return (
     <div className="App">
