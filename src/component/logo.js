@@ -144,8 +144,8 @@ const Logo = ({ inputValues, textColor }) => {
       <div className='introTitle'>
         <div className='introTitleTextWrap'>
             <div className='introTitleText'>
-                <p style={{ color: textColor }}>{howLong.days}일1</p>
-                <p style={{ color: textColor }}>{howLong.hours} 시간1</p>
+                <p style={{ color: textColor }}>{howLong.days}일</p>
+                <p style={{ color: textColor }}>{howLong.hours} 시간</p>
             </div>
             <div className='introTitleTextClone'>
                 <p style={{ color: textColor }}>{howLong.days}일</p>
@@ -153,7 +153,9 @@ const Logo = ({ inputValues, textColor }) => {
             </div>
         </div>
         <div className='introText'>
-            <p>FRONT-END DEVELOPER 조성민 입니다</p>
+            <p style={{ color: textColor }}>의 신입 
+            <br/>FRONT-END 
+            <br/>DEVELOPER</p>
         </div>
       </div>
 

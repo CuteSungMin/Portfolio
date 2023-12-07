@@ -6,18 +6,19 @@
 }
 .contactBox{
     width: 600px;
-    padding: 30px;
     margin: 0 auto 200px;
-    background-color: #fff;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 .contactWrap{
     position: relative;
+    background-color: #fff;
+    padding: 140px 0 140px;
 }
 .contactName{
     font-size: 40px;
     font-weight: bold;
-    margin: 120px auto 120px;
 }
 .name1{
     position: relative;
@@ -72,18 +73,119 @@
     31%{opacity: 1;}
     100%{opacity: 1;}
 }
+
+
+
+.hideContactWrap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.hideContactWrap>div{
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 20px 0 20px;
+    background-color: #f1f1f1;
+    color: #050505;
+}
+.contactBox:hover .contactWrap  {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  .hideContactWrap {
+    opacity: 0;
+    display: none;
+  }
+  .contactBox:hover .hideContactWrap {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .contactBox:hover .hideContactLeft {
+    animation: hideContactLeft 3s forwards;
+  }
+  .hideContactWrap>div:first-child{
+    padding: 30px 0 30px 15px;
+    text-align: start;
+    padding-left: 20px;
+}
+  .contactWhiteLogo{
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .hideContactLeftText>p{
+    margin-bottom: 10px;
+  }
+  .contactBox:hover .hideContactCenter {
+    animation: hideContactCenter 5s forwards;
+  }
+  .contactBox:hover .hideContactRight {
+    animation: hideContactRight 7s forwards;
+  }
+  @keyframes hideContactLeft {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes hideContactCenter {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes hideContactRight {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+
+
+
+
+
+
 @media (max-width : 768px){
     .contactBox{
         width: 400px;
         padding: 20px;
     }
+    .contactWrap{
+        padding: 100px 0 100px;
+    }
+    .hideContactWrap{
+        top: 20px;
+        left: 20px;
+        width: 90%;
+        height: 90%;
+        overflow: hidden;
+    }
+    .hideContactWrap>div{
+        padding: 15px 0 15px;
+    }
     .contactName{
-        margin: 80px auto 80px;
         font-size: 30px;
     }
     .contactLogo{
         width: 100px;
     }
+    .contactWhiteLogo{
+        width: 60px;
+    }
+    .hideContactLeftText>p{
+        font-size: 14px;
+      }
     @keyframes nameC {
         0%{ top: 0px; right: 0px;}
         30%{top: -25px; right: -60px;}
@@ -109,11 +211,30 @@
         padding: 20px;
     }
     .contactName{
-        margin: 70px auto 70px;
         font-size: 24px;
     }
     .contactLogo{
-        width: 80px;
+        width: 60px;
+    }
+    .contactWrap{
+        padding: 70px 0 70px;
+    }
+    .contactWhiteLogo{
+        width: 60px;
+        margin-bottom: 10px;
+    }
+    .hideContactWrap{
+        top: 20px;
+        left: 20px;
+        width: 90%;
+        height: 90%;
+        overflow: hidden;
+    }
+    .hideContactWrap>div:first-child{
+        padding: 10px 0 10px 10px;
+    }
+    .hideContactLeftText>p{
+        font-size: 12px;
     }
     @keyframes nameC {
         0%{ top: 0px; right: 0px;}
@@ -134,6 +255,7 @@
         100%{top: 20px ;right: 27px; opacity: 0;}
     }
 }
+
 @media (max-width : 460px){
     .contactBox{
         width: 250px;
@@ -146,6 +268,30 @@
     .contactLogo{
         width: 70px;
     }
+    .contactWrap{
+        padding: 30px 0 30px;
+    }
+    .contactWhiteLogo{
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    .hideContactWrap{
+        top: 20px;
+        left: 20px;
+        width: 85%;
+        height: 80%;
+        overflow: hidden;
+    }
+    .hideContactWrap>div:first-child{
+        padding: 5px 0 5px 5px;
+    }
+    .hideContactLeftText>p{
+        font-size: 10px;
+    }
+
+
+
+
     @keyframes nameC {
         0%{ top: 0px; right: 0px;}
         30%{top: -17px; right: -40px;}
