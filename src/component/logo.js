@@ -154,10 +154,8 @@ const Logo = ({ inputValues, textColor }) => {
         </p>
       </div>
       <div className='introTitle'>
-        <div className='introTitleTextWrap'>
             <div className='introTitleText'>
-                <p style={{ color: textColor }}><span>{howLong.days}일</span> <span>{howLong.hours}시간</span> <span>{howLong.minutes} 분</span> <span>{howLong.seconds} 초</span> 성장하는 신입 개발자</p>
-            </div>
+                <p style={{ color: textColor }}><span>{howLong.days}일</span> <span>{howLong.hours}시간</span> <span>{howLong.minutes} 분</span> <span>{howLong.seconds} 초</span> <br/>성장하는 신입 개발자</p>
         </div>
       </div>
 
