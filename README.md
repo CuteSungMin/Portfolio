@@ -15,8 +15,10 @@
 <p>그린 컴퓨터 아카데미 프론트엔드 과정을 다니며 배웠던 것들을 포트폴리오에 담아 보았습니다.</p>
 <br>
 <h1> Team Project </h1>
-<p>경복궁 별빛야행 https://cutesungmin.github.io/festival/</p>
-<p>eBook https://wjdgma603.github.io/RepublicOfFreeCoding/</p>
+<p>경복궁 별빛야행(3인-조장) https://cutesungmin.github.io/festival/</p>
+<p> - 메인 3D, 메인 소개 섹션, 메인 갤러리 섹션, 서브페이지 등을 맡았습니다.</p>
+<p>eBook(5인-조원) https://wjdgma603.github.io/RepublicOfFreeCoding/</p>
+<p> - 메인 3D, 문제집 페이지를 맡았습니다.</p>
 <br>
 <h1> Alone Project </h1>
 <p>프론트엔드 사전 https://cutesungmin.github.io/dictionary/</p>
