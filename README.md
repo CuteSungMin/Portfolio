@@ -8,9 +8,12 @@
   <br>
   <span><img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white" /></span>
   <span><img src="https://img.shields.io/badge/Illustrator-FF9A00?style=flat&logo=adobeillustrator&logoColor=white" /></span>
-  <span><img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat&logo=adobephotoshop&logoColor=white" /></span>
   <span><img src="https://img.shields.io/badge/Blender-E87D0D?style=flat&logo=blender&logoColor=white" /></span>
 <br>
 <br>
 # 2023.05.31 ~ 2023.12.18
 <p>그린 컴퓨터 아카데미 프론트엔드 과정을 다니며 만들었던 작업물들을 포트폴리오에 담아 보았습니다.</p>
+<br>
+<h1> Team Project </h1>
+<p>경복궁 별빛야행 https://cutesungmin.github.io/festival/</p>
+[Click here to try](https://leebo-ram.github.io/Navbar/)
