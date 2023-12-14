@@ -71,28 +71,28 @@
 }
 .topLeftBox{
     width: 30px; height: 30px;
-    background-color: #000;
+    background-color: #050505;
     position: absolute;
     top: -15px;
     left: -15px;
 }
 .topRightBox{
     width: 30px; height: 30px;
-    background-color: #000;
+    background-color: #050505;
     position: absolute;
     top: -15px;
     right: -15px;
 }
 .botLeftBox{
     width: 30px; height: 30px;
-    background-color: #000;
+    background-color: #050505;
     position: absolute;
     bottom: -15px;
     left: -15px;
 }
 .botRightBox{
     width: 30px; height: 30px;
-    background-color: #000;
+    background-color: #050505;
     position: absolute;
     bottom: -15px;
     right: -15px;
